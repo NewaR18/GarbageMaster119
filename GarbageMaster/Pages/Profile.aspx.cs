@@ -60,11 +60,12 @@ namespace GarbageMaster.Pages
                     string phone = PhoneNo.Text;
                     string ward = Ward.Text;
                     response = _dll.UpdateUsersTable(fname, mname, lname, phone, ward, name);
-                    if (!upload2.HasFile)
+                   if (!upload2.HasFile)
                     {
                     }
                     else if (upload2.PostedFile.ContentLength > 100000)
                     {
+                        ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "text", "Func()", true);
                     }
                     else
                     {
@@ -76,6 +77,7 @@ namespace GarbageMaster.Pages
                             _dll.UpdateUserImage(pic, name);
                         }
                         catch (Exception ex)
+
                         {
                             throw ex;
                         }

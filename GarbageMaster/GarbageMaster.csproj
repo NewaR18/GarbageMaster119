@@ -154,6 +154,13 @@
     <Compile Include="Pages\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Wastedata.aspx.cs">
+      <DependentUpon>Wastedata.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Wastedata.aspx.designer.cs">
+      <DependentUpon>Wastedata.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Pages\HomePage.aspx.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
@@ -182,6 +189,7 @@
     <Content Include="Pages\Login.aspx" />
     <Content Include="Pages\Profile.aspx" />
     <Content Include="Pages\Register.aspx" />
+    <Content Include="Pages\Wastedata.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Pages\HomePage.aspx" />
@@ -205,11 +213,14 @@
     <Content Include="wwwroot\css\LoginForm.css" />
     <Content Include="wwwroot\css\profile.css" />
     <Content Include="wwwroot\css\RegisterForm.css" />
+    <Content Include="wwwroot\css\Wastedata.css" />
     <Content Include="wwwroot\images\Awareness.png" />
     <Content Include="wwwroot\images\Awareness2.png" />
     <Content Include="wwwroot\images\bck.jpg" />
+    <Content Include="wwwroot\images\bigbag.png" />
     <Content Include="wwwroot\images\ck.jpg" />
     <Content Include="wwwroot\images\database.png" />
+    <Content Include="wwwroot\images\Dustbin.png" />
     <Content Include="wwwroot\images\garbage.png" />
     <Content Include="wwwroot\images\Health.png" />
     <Content Include="wwwroot\images\location.png" />
@@ -217,7 +228,9 @@
     <Content Include="wwwroot\images\logo2.png" />
     <Content Include="wwwroot\images\map.png" />
     <Content Include="wwwroot\images\network.png" />
+    <Content Include="wwwroot\images\plastic.png" />
     <Content Include="wwwroot\images\profile.jpg" />
+    <Content Include="wwwroot\images\Sack.png" />
     <Content Include="wwwroot\images\segregation.png" />
     <Content Include="wwwroot\images\sideimg.png" />
     <Content Include="wwwroot\images\sidephoto.jpeg" />

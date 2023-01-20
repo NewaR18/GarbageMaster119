@@ -2,12 +2,31 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="../wwwroot/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <script src="../wwwroot/js/jquery-3.6.3.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.all.min.js"></script>
     <script type="text/javascript">
-        $(function () {
+        /*$(function () {
             $("Image1").click(function () {
                 console.log("Hello")
             });
-        });
+        });*/
+        function Func() {
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 5000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+            })
+
+            Toast.fire({
+                icon: 'error',
+                title: 'Insert Image below 100KB'
+            })
+        }
     </script>
     <link href="../wwwroot/css/profile.css" rel="stylesheet" />
 </asp:Content>
