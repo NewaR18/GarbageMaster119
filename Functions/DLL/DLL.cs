@@ -1,22 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.Specialized;
-using System.Data;
 using System.Configuration;
+using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Functions.Data_Link_Layer
 {
     public class DLL
     {
-        string conval = ConfigurationManager.ConnectionStrings["myconnection"].ConnectionString;
-        public string InsertMessage(string Name,string Email, string Subject,string Message)
+        private string conval = ConfigurationManager.ConnectionStrings["myconnection"].ConnectionString;
+
+        public string InsertMessage(string Name, string Email, string Subject, string Message)
         {
-            string response="";
-            using (SqlCommand cmd=new SqlCommand())
+            string response = "";
+            using (SqlCommand cmd = new SqlCommand())
             {
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "insertmessage";
@@ -29,7 +27,7 @@ namespace Functions.Data_Link_Layer
                     cmd.Parameters.Add("@email", SqlDbType.VarChar).Value = Email;
                     cmd.Parameters.Add("@subject", SqlDbType.VarChar).Value = Subject;
                     cmd.Parameters.Add("@message", SqlDbType.VarChar).Value = Message;
-                    using(SqlDataReader sd = cmd.ExecuteReader())
+                    using (SqlDataReader sd = cmd.ExecuteReader())
                     {
                         if (sd.HasRows)
                         {
@@ -43,6 +41,7 @@ namespace Functions.Data_Link_Layer
             }
             return response;
         }
+
         public string RegisterUser(string FName, string MName, string LName, string Email, string UName, string Password, int Ward)
         {
             string response = "";
@@ -76,6 +75,7 @@ namespace Functions.Data_Link_Layer
             }
             return response;
         }
+
         public string LoginUser(string UName, string Password)
         {
             string response = "";
@@ -104,15 +104,16 @@ namespace Functions.Data_Link_Layer
             }
             return response;
         }
+
         public List<string> DatafromUserTable(string name) // tuple return type
         {
-            List<string> s2=new List<string>();
-            string fname="";
-            string mname="";
-            string lname="";
-            string email="";
-            string username="";
-            string ward="";
+            List<string> s2 = new List<string>();
+            string fname = "";
+            string mname = "";
+            string lname = "";
+            string email = "";
+            string username = "";
+            string ward = "";
             string phone = "";
             using (SqlCommand cmd = new SqlCommand())
             {
@@ -172,7 +173,8 @@ namespace Functions.Data_Link_Layer
             }
             return s2;
         }
-        public DataTable GetData(SqlCommand cmd,string name)
+
+        public DataTable GetData(SqlCommand cmd, string name)
         {
             DataTable dt = new DataTable();
             SqlConnection con = new SqlConnection(conval);
@@ -200,6 +202,7 @@ namespace Functions.Data_Link_Layer
                 con.Dispose();
             }
         }
+
         public string UpdateUsersTable(string fname, string mname, string lname, string phone, string ward, string name)
         {
             string response = "";
@@ -228,12 +231,12 @@ namespace Functions.Data_Link_Layer
                             }
                         }
                     }
-
                 }
             }
             return response;
         }
-        public void UpdateUserImage(byte[] pic,string name)
+
+        public void UpdateUserImage(byte[] pic, string name)
         {
             using (SqlCommand cmd = new SqlCommand())
             {
@@ -251,5 +254,33 @@ namespace Functions.Data_Link_Layer
             }
         }
 
+        public string InsertWasteData(int n,string uname)
+        {
+            string response="";
+            using (SqlCommand cmd = new SqlCommand())
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "updatewastedata";
+                using (SqlConnection conn = new SqlConnection(conval))
+                {
+                    cmd.Connection = conn;
+                    conn.Open();
+                    cmd.CommandTimeout = 30;
+                    cmd.Parameters.AddWithValue("@username",uname);
+                    cmd.Parameters.AddWithValue("@val", n);
+                    using(SqlDataReader rd=cmd.ExecuteReader())
+                    {
+                        if(rd.HasRows )
+                        {
+                            while(rd.Read())
+                            {
+                                response = rd[0].ToString();
+                            }
+                        }
+                    }
+                }
+            }
+            return response;
+        }
     }
 }

@@ -17,11 +17,11 @@
     font-weight: 500;
 }
 
-.card-title span {
-    color: #899bbd;
-    font-size: 14px;
-    font-weight: 400;
-}
+    .card-title span {
+        color: #899bbd;
+        font-size: 14px;
+        font-weight: 400;
+    }
 
 .gogreen2 {
     color: #04736a;
@@ -43,28 +43,32 @@
 .buttoncolor23 {
     background-color: #04736a;
     color: white;
-    border:1px solid ;
-    border-radius:1px;
-    padding:5px 10px 5px 10px;
-    margin-top:25px;
+    border: 1px solid;
+    border-radius: 1px;
+    padding: 5px 10px 5px 10px;
+    margin-top: 25px;
 }
-.buttoncolor23:hover {
-    opacity: 0.9;
-    background-color: #04736a;
-    color: white;
-}
+
+    .buttoncolor23:hover {
+        opacity: 0.9;
+        background-color: #04736a;
+        color: white;
+    }
 
 .errorfname2 {
     color: red;
     font-size: 11px;
 }
-a{
-    text-decoration:none;
-    color:black;
+
+a {
+    text-decoration: none;
+    color: black;
 }
+
 #mylink2 {
     color: #04736a;
 }
+
 .firstpart1 {
     width: 600px;
     height: 713px;
@@ -73,17 +77,21 @@ a{
     background-size: 600px 713px;
     opacity: 0.5;
 }
-.section{
-    display:flex;
-    justify-content:center;
+
+.section {
+    display: flex;
+    justify-content: center;
 }
-.makeit600{
-    width:600px;
+
+.makeit600 {
+    width: 600px;
 }
+
 .greencoloropacity {
     background-image: url('../images/sideimg.png');
     background-size: 600px 713px;
 }
+
 .sabkoch {
     display: flex;
     justify-content: center;

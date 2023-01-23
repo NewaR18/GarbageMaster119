@@ -1,19 +1,21 @@
-﻿
-
-body {
+﻿body {
 }
+
 .defcolor2 {
     background-color: #04736a;
-    color:white;
-    width:100%;
+    color: white;
+    width: 100%;
 }
+
 .defcolor3 {
     background-color: #04736a;
     color: white;
 }
-.myownlink{
-    color:white;
+
+.myownlink {
+    color: white;
 }
+
 a {
     color: white;
     text-decoration: none;
@@ -21,16 +23,16 @@ a {
     font-size: 16px;
     line-height: 70px;
 }
-.navbar
- {
-    display:flex;
-    justify-content:center;
-    padding:0px 7% 0px 7%;
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 0px 7% 0px 7%;
 }
+
 a:hover {
     color: white;
 }
-
 
 .logo {
     width: 170px;
@@ -70,22 +72,31 @@ a:hover {
     margin-top: 10px;
     padding: 3px;
 }
-.services2{
-    margin:0px!important;
-    width:477px;
+
+.services2 {
+    margin: 0px !important;
+    width: 477px;
 }
-.quicklinks2{
+
+.quicklinks2 {
 }
-.myheight-2{
-    height:35px;
+
+.myheight-2 {
+    height: 35px;
 }
-.mypadding-0{
-    padding:5px;
-    line-height:10px;
+
+.mypadding-0 {
+    padding: 5px;
+    line-height: 10px;
 }
+
 .dropdown-menu {
     background-color: rgba(4, 115, 106,0.2);
 }
-.collapse{
-    margin-right:50px;
+
+.collapse {
+    margin-right: 50px;
+}
+.registerlogin2{
+    border: 1px solid;
 }

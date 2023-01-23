@@ -6,6 +6,8 @@
     <link href="../wwwroot/bootstrap/bootstrap-icons.css" rel="stylesheet" />
     <link href="../wwwroot/css/Wastedata.css" rel="stylesheet" />
     <script src="https://ajax.aspnetcdn.com/ajax/knockout/knockout-3.1.0.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.all.min.js"></script>
+    <script src="../wwwroot/js/wastedata.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">\
     <section id="team" class="team">
@@ -17,8 +19,7 @@
           <p>Thank you for participating in our program. By following us, you too are contributing for this society.</p>
         </div>
 
-        <div class="row">
-
+        <div class="row" data-bind="with: Master">
           <div class="col-lg-6  mt-4 mt-lg-0">
             <div class="member d-flex align-items-start">
               <div class="pic"><img width="125" height="125" class="img-fluid" src="../wwwroot/images/plastic.png" /></div>
@@ -27,7 +28,7 @@
                 <span>Number of filled Plastics</span>
                 <p>Small plastic refers to bags that contains very small amount of garbages. We advise you not to count without filling the entire bag. The filled bag allows us to measure the data more efficiently.</p>
                   <div class="col-6 mt-3">
-                <input data-bind="value:smallplastic" type="text" class="form-control" id="inputsmallplastic" placeholder="Quantity in Units">
+                <input data-bind="value:smallplastic" type="number" class="form-control" id="inputsmallplastic" placeholder="Quantity in Units">
                   </div>
              </div>
             </div>
@@ -41,7 +42,7 @@
                 <span>Number of filled big bags</span>
                 <p>Big bag refers to bags that contains large amount of garbages. We advise you not to count without filling the entire bag. The filled bag allows us to measure the data more efficiently.</p>
                   <div class="col-6 mt-3">
-                <input data-bind="value:bigplastic" type="text" class="form-control " id="inputbigplastic" placeholder="Quantity in Units">
+                <input data-bind="value:bigplastic" type="number" class="form-control " id="inputbigplastic" placeholder="Quantity in Units">
                   </div>
               </div>
             </div>
@@ -55,7 +56,7 @@
                 <span>Number of filled Dustbin</span>
                 <p>Dust bin refers to storage that contains large amount of garbages. If the dustbin is very small, please count it in plastic zone. We advise you not to count without filling the entire bin to make it more efficient</p>
                   <div class="col-6 mt-3">
-                <input data-bind="value:dustbin" type="text" class="form-control" id="inputdustbin" placeholder="Quantity in Units">
+                <input data-bind="value:dustbin" type="number" class="form-control" id="inputdustbin" placeholder="Quantity in Units">
                   </div>
               </div>
             </div>
@@ -67,16 +68,20 @@
               <div class="member-info">
                 <h4>Sack Bag</h4>
                 <span>Number of filled sack bags</span>
-                <p>Big bag refers to bags that contains very large amount of garbages. We advise you not to count without filling the entire bag. The filled bag allows us to measure the data more efficiently.</p>
+                <p>Sack bag refers to bags that contains very large amount of garbages. We advise you not to count without filling the entire bag. The filled bag allows us to measure the data more efficiently.</p>
                   <div class="col-6 mt-3">
-                <input data-bind="value:sack" type="text" class="form-control" id="inputsack" placeholder="Quantity in Units">
+                <input data-bind="value:sack" type="number" class="form-control" id="inputsack" placeholder="Quantity in Units">
                   </div>
               </div>
             </div>
+            
           </div>
-
+            <div class="col-12 d-flex justify-content-center mb-5 mt-0">
+            <button data-bind="event:{click: saveprocess}" class="buttoncolor23 mt-4 ps-4 pe-4 pt-2 pb-2">Update</button>
+            </div>
         </div>
 
       </div>
     </section>
+    
 </asp:Content>

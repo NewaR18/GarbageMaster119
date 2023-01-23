@@ -13,19 +13,19 @@
     border: none
 }
 
-.profile-button:hover {
-    background: #682773
-}
+    .profile-button:hover {
+        background: #682773
+    }
 
-.profile-button:focus {
-    background: #682773;
-    box-shadow: none
-}
+    .profile-button:focus {
+        background: #682773;
+        box-shadow: none
+    }
 
-.profile-button:active {
-    background: #682773;
-    box-shadow: none
-}
+    .profile-button:active {
+        background: #682773;
+        box-shadow: none
+    }
 
 .back:hover {
     color: #682773;
@@ -42,23 +42,26 @@
     cursor: pointer;
     border: solid 1px #BA68C8
 }
+
 input[type="text"] {
     background-color: #EEEEEE;
-    font-family:'Century Gothic';
-}
-.myownbutton {
-    background-color: #04736a;
-    color:white;
-    font-weight:400;
-    font-size:14px;
-    padding:6px 6px 6px 6px;
-    border-radius:2px;
-}
-.makelinkwhite{
-    color:white;
-    text-decoration:none;
+    font-family: 'Century Gothic';
 }
 
-.makeitcirclelike{
-    border-radius:48%;
+.myownbutton {
+    background-color: #04736a;
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 6px 6px 6px 6px;
+    border-radius: 2px;
+}
+
+.makelinkwhite {
+    color: white;
+    text-decoration: none;
+}
+
+.makeitcirclelike {
+    border-radius: 48%;
 }

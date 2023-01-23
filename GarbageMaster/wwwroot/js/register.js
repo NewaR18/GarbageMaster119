@@ -13,38 +13,38 @@
             this.hello = ko.observable(item.hello || '');
             this.terms = ko.observable(item.terms || false);
             this.availables = ko.observableArray(
-            [{ name: 'Ward 1', id: 1 },
-            { name: 'Ward 2', id: 2 },
-            { name: 'Ward 3', id: 3 },
-            { name: 'Ward 4', id: 4 },
-            { name: 'Ward 5', id: 5 },
-            { name: 'Ward 6', id: 6 },
-            { name: 'Ward 7', id: 7 },
-            { name: 'Ward 8', id: 8 },
-            { name: 'Ward 9', id: 9 },
-            { name: 'Ward 10', id: 10 },
-            { name: 'Ward 11', id: 11 },
-            { name: 'Ward 12', id: 12 },
-            { name: 'Ward 13', id: 13 },
-            { name: 'Ward 14', id: 14 },
-            { name: 'Ward 15', id: 15 },
-            { name: 'Ward 16', id: 16 },
-            { name: 'Ward 17', id: 17 },
-            { name: 'Ward 18', id: 18 },
-            { name: 'Ward 19', id: 19 },
-            { name: 'Ward 20', id: 20 },
-            { name: 'Ward 21', id: 21 },
-            { name: 'Ward 22', id: 22 },
-            { name: 'Ward 23', id: 23 },
-            { name: 'Ward 24', id: 24 },
-            { name: 'Ward 25', id: 25 },
-            { name: 'Ward 26', id: 26 },
-            { name: 'Ward 27', id: 27 },
-            { name: 'Ward 28', id: 28 },
-            { name: 'Ward 29', id: 29 },
-            { name: 'Ward 30', id: 30 },
-            { name: 'Ward 31', id: 31 },
-            { name: 'Ward 32', id: 32 }]
+                [{ name: 'Ward 1', id: 1 },
+                { name: 'Ward 2', id: 2 },
+                { name: 'Ward 3', id: 3 },
+                { name: 'Ward 4', id: 4 },
+                { name: 'Ward 5', id: 5 },
+                { name: 'Ward 6', id: 6 },
+                { name: 'Ward 7', id: 7 },
+                { name: 'Ward 8', id: 8 },
+                { name: 'Ward 9', id: 9 },
+                { name: 'Ward 10', id: 10 },
+                { name: 'Ward 11', id: 11 },
+                { name: 'Ward 12', id: 12 },
+                { name: 'Ward 13', id: 13 },
+                { name: 'Ward 14', id: 14 },
+                { name: 'Ward 15', id: 15 },
+                { name: 'Ward 16', id: 16 },
+                { name: 'Ward 17', id: 17 },
+                { name: 'Ward 18', id: 18 },
+                { name: 'Ward 19', id: 19 },
+                { name: 'Ward 20', id: 20 },
+                { name: 'Ward 21', id: 21 },
+                { name: 'Ward 22', id: 22 },
+                { name: 'Ward 23', id: 23 },
+                { name: 'Ward 24', id: 24 },
+                { name: 'Ward 25', id: 25 },
+                { name: 'Ward 26', id: 26 },
+                { name: 'Ward 27', id: 27 },
+                { name: 'Ward 28', id: 28 },
+                { name: 'Ward 29', id: 29 },
+                { name: 'Ward 30', id: 30 },
+                { name: 'Ward 31', id: 31 },
+                { name: 'Ward 32', id: 32 }]
             );
         }
     }
@@ -137,11 +137,11 @@
                             confirmButtonColor: '#04736a',
                             cancelButtonColor: '#d33',
                             confirmButtonText: 'Redirect to Login Page'
-                            }).then((result) => {
-                                if (result.isConfirmed) {
-                                    window.location = "Login.aspx";
-                                }
-                            })
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                window.location = "Login.aspx";
+                            }
+                        })
                         self.Master().fname("");
                         self.Master().mname("");
                         self.Master().lname("");

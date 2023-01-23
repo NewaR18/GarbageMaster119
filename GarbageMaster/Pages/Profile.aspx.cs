@@ -4,21 +4,21 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
 using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace GarbageMaster.Pages
 {
     public partial class Profile : System.Web.UI.Page
     {
-        string conval = ConfigurationManager.ConnectionStrings["myconnection"].ConnectionString;
+        private string conval = ConfigurationManager.ConnectionStrings["myconnection"].ConnectionString;
         public DLL _dll;
+
         public Profile()
         {
-            _dll=new DLL();
+            _dll = new DLL();
         }
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["UserName"] == null)
@@ -33,6 +33,7 @@ namespace GarbageMaster.Pages
                 }
             }
         }
+
         protected void Update(object sender, EventArgs e)
         {
             if (Session["UserName"] != null)
@@ -60,7 +61,7 @@ namespace GarbageMaster.Pages
                     string phone = PhoneNo.Text;
                     string ward = Ward.Text;
                     response = _dll.UpdateUsersTable(fname, mname, lname, phone, ward, name);
-                   if (!upload2.HasFile)
+                    if (!upload2.HasFile)
                     {
                     }
                     else if (upload2.PostedFile.ContentLength > 100000)
@@ -82,12 +83,13 @@ namespace GarbageMaster.Pages
                             throw ex;
                         }
                     }
-                }catch (Exception ex)
+                }
+                catch (Exception ex)
                 {
-
                 }
             }
         }
+
         protected void Makeiteditable(object sender, EventArgs e)
         {
             update.Visible = true;
@@ -104,6 +106,7 @@ namespace GarbageMaster.Pages
             PhoneNo.Attributes.CssStyle.Add("background", "none");
             Ward.Attributes.CssStyle.Add("background", "none");
         }
+
         protected void DoInPageLoad()
         {
             string name = Session["UserName"].ToString();
@@ -117,33 +120,28 @@ namespace GarbageMaster.Pages
             myemail.InnerText = list[3];
             Ward.Text = list[5];
             PhoneNo.Text = list[6];
-                SqlCommand cmd = new SqlCommand();
-                DataTable dt = _dll.GetData(cmd, name);
-                try
-                {
+            SqlCommand cmd = new SqlCommand();
+            DataTable dt = _dll.GetData(cmd, name);
+            try
+            {
                 if (Request.QueryString["ImageID"] != null)
                 {
-                        if (dt != null)
-                        {
-                            Byte[] bytes = (Byte[])dt.Rows[0]["Image"];
-                            Response.Buffer = true;
-                            Response.Charset = "";
-                            Response.Cache.SetCacheability(HttpCacheability.NoCache);
-                            Response.AddHeader("content-disposition", "attachment;filename=" + dt.Rows[0]["Id"].ToString());
-                            Response.BinaryWrite(bytes);
-                            Response.Flush();
-                            Response.End();
-                        }
-                        else
-                        {
-                            Image1.ImageUrl = (@"C:\Users\sudip\source\repos\Infodev\Trainee\GarbageMaster\GarbageMaster\wwwroot\images\profile.jpg");
-
-                        }
+                    if (dt != null)
+                    {
+                        Byte[] bytes = (Byte[])dt.Rows[0]["Image"];
+                        Response.Buffer = true;
+                        Response.Charset = "";
+                        Response.Cache.SetCacheability(HttpCacheability.NoCache);
+                        Response.AddHeader("content-disposition", "attachment;filename=" + dt.Rows[0]["Id"].ToString());
+                        Response.BinaryWrite(bytes);
+                        Response.Flush();
+                        Response.End();
+                    }
                 }
             }
-                catch (Exception ex)
-                {
-                }
+            catch (Exception ex)
+            {
+            }
             upload2.Visible = false;
         }
     }

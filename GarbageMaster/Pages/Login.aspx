@@ -11,28 +11,20 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <main>
-        
          <section class="section register min-vh-50 py-4">
              <div class="sabkoch">
              <div class="greencoloropacity">
-                <div class="firstpart1">
-
-                </div>
+                <div class="firstpart1"></div>
               </div>
         <div class="secondpart1">
         <div class="container makeit600">
           <div class="row justify-content-center">
             <div class=" col-10 d-flex flex-column align-items-center justify-content-center">
-
               <div class="d-flex justify-content-center py-4 makeitmid">
                   <img src="../wwwroot/images/logo1.png" class="img-fluid myimageedit" alt="photo"/>
-                
               </div>
-
               <div class="card mb-6">
-
                 <div class="card-body">
-
                   <div class="pt-4 pb-2">
                     <h5 class="card-title text-center pb-0 fs-4 gogreen2">Signing In</h5>
                     <p class="text-center small gogreen2">We appreciate you from visiting our website again</p>
@@ -56,17 +48,13 @@
                           </div>
                     </div>
                     </div>
+                  </div>
                 </div>
               </div>
-
             </div>
           </div>
             </div>
-             </div>
-          </section>
-        
-      
-        
+          </section>   
   </main>
 </asp:Content>
 

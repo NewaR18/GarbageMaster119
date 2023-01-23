@@ -9,6 +9,18 @@
     <link href="../wwwroot/bootstrap/bootstrap-icons.css" rel="stylesheet" />
     <script src="https://ajax.aspnetcdn.com/ajax/knockout/knockout-3.1.0.js" type="text/javascript"></script>
     <script src="../wwwroot/js/submit.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.all.min.js"></script>
+    <script type="text/javascript" language="javascript">
+        function Alertforclick() {
+            Swal.fire({
+                title: 'Sorry!',
+                text: 'You need to login in order to access this page',
+                icon: 'error',
+                confirmButtonColor: '#ff5a5a',
+                confirmButtonText: 'Okay'
+            })
+        }
+    </script>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -115,13 +127,13 @@ The admin checks for the density of the waste in different regions and sends the
                     <p>Garbage Collector provides wide range of services for general public that result to better version of our society.</p>
                 </div>
 
-                <div class="row">
+                <div class="row" runat="server">
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                         <div class="icon-box">
                             <div class="icon">
                                 <img src="../wwwroot/images/Awareness2.png" alt="photo" />
                             </div>
-                            <h4><a href="">Collect Garbage Data</a></h4>
+                            <h4><asp:LinkButton ID="LinkButton1" runat="server" OnClick="redirectingtowastepage">Collect Garbage Data</asp:LinkButton></h4>
                             <p>We college garbage data from citizens to provide better garbage management system</p>
                         </div>
                     </div>

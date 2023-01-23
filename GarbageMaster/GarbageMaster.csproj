@@ -238,10 +238,12 @@
     <Content Include="wwwroot\images\System.png" />
     <Content Include="wwwroot\images\xx.jpg" />
     <Content Include="wwwroot\js\jquery-3.6.3.js" />
+    <Content Include="wwwroot\js\knockout-3.5.1.js" />
     <Content Include="wwwroot\js\login.js" />
     <Content Include="wwwroot\js\register.js" />
     <Content Include="wwwroot\js\submit.js" />
     <Content Include="Layout.Master" />
+    <Content Include="wwwroot\js\wastedata.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />

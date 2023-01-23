@@ -34,7 +34,7 @@
   }
 
   /**
-   * Easy on scroll event listener 
+   * Easy on scroll event listener
    */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
@@ -232,14 +232,12 @@
         portfolioIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });
-
       }, true);
     }
-
   });
 
   /**
-   * Initiate portfolio lightbox 
+   * Initiate portfolio lightbox
    */
   const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'
@@ -261,5 +259,4 @@
       clickable: true
     }
   });
-
 })()

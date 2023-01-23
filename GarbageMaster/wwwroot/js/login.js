@@ -20,14 +20,13 @@
                 type: "POST",
                 url: "/Main/CheckLogin",
                 dataType: "json",
-                data: {  uname: self.Master().uname(), password: self.Master().password()},
+                data: { uname: self.Master().uname(), password: self.Master().password() },
                 success: function (result) {
                     var name = result.Name;
                     if (name == "ValidUser") {
                         window.location = "HomePage.aspx";
                         self.Master().uname("");
                         self.Master().password("");
-
                     } else if (name == "UsernameNotFound") {
                         Swal.fire({
                             icon: 'error',

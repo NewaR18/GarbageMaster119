@@ -20,11 +20,21 @@
             success: function (result) {
                 var name = result.Name;
                 if (name == "Submitted") {
-                    self.Master().res(name);
-                    self.Master().res2("");
+                    Swal.fire({
+                        title: 'Great!',
+                        text: 'Your Review has been submitted, Our Team will get back to you with in a week',
+                        icon: 'success',
+                        confirmButtonColor: '#04736a',
+                        confirmButtonText: 'Okay'
+                    })
                 } else {
-                    self.Master().res("");
-                    self.Master().res2(name);
+                    Swal.fire({
+                        title: 'Sorry!',
+                        text: 'Your review could not be submitted, please fill all fields',
+                        icon: 'error',
+                        confirmButtonColor: '#ff5a5a',
+                        confirmButtonText: 'Okay'
+                    })
                 }
                 self.Master().name("");
                 self.Master().email("");
@@ -51,7 +61,6 @@
         self.Master = ko.observable(new models.Master());
     }
     Init();
-
 }
 var obj;
 $(document).ready(function () {
