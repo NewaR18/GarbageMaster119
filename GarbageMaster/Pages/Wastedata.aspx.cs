@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Web.UI.WebControls;
 
 namespace GarbageMaster.Pages
 {
@@ -6,6 +7,10 @@ namespace GarbageMaster.Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["UserName"] == null)
+            {
+                Response.Redirect("HomePage.aspx");
+            }
         }
     }
 }

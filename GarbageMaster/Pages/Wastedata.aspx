@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Layout.Master" AutoEventWireup="true" CodeBehind="Wastedata.aspx.cs" Inherits="GarbageMaster.Pages.Wastedata" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    
     <link href="../wwwroot/bootstrap/animate.min.css" rel="stylesheet" />
     <script src="../wwwroot/js/jquery-3.6.3.js"></script>
     <link href="../wwwroot/bootstrap/bootstrap.min.css" rel="stylesheet" />
@@ -74,7 +75,6 @@
                   </div>
               </div>
             </div>
-            
           </div>
             <div class="col-12 d-flex justify-content-center mb-5 mt-0">
             <button data-bind="event:{click: saveprocess}" class="buttoncolor23 mt-4 ps-4 pe-4 pt-2 pb-2">Update</button>
@@ -83,5 +83,4 @@
 
       </div>
     </section>
-    
 </asp:Content>

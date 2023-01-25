@@ -36,7 +36,7 @@ namespace GarbageMaster
         }
         protected void Team_Click(object sender, EventArgs e)
         {
-            Response.Redirect("../Pages/Login.aspx");
+            Response.Redirect("../Pages/Teams.aspx");
         }
 
         protected void Contact_Click(object sender, EventArgs e)

@@ -154,6 +154,20 @@
     <Compile Include="Pages\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\TableDisplay.aspx.cs">
+      <DependentUpon>TableDisplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\TableDisplay.aspx.designer.cs">
+      <DependentUpon>TableDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Teams.aspx.cs">
+      <DependentUpon>Teams.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Teams.aspx.designer.cs">
+      <DependentUpon>Teams.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Wastedata.aspx.cs">
       <DependentUpon>Wastedata.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -189,6 +203,8 @@
     <Content Include="Pages\Login.aspx" />
     <Content Include="Pages\Profile.aspx" />
     <Content Include="Pages\Register.aspx" />
+    <Content Include="Pages\TableDisplay.aspx" />
+    <Content Include="Pages\Teams.aspx" />
     <Content Include="Pages\Wastedata.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -203,6 +219,8 @@
     <Content Include="wwwroot\bootstrap\boxicons.css" />
     <Content Include="wwwroot\bootstrap\boxicons.min.css" />
     <Content Include="wwwroot\bootstrap\glightbox.min.css" />
+    <Content Include="wwwroot\bootstrap\jquery.dataTables.css" />
+    <Content Include="wwwroot\bootstrap\jquery.dataTables.js" />
     <Content Include="wwwroot\bootstrap\main.js" />
     <Content Include="wwwroot\bootstrap\swiper-bundle.min.css" />
     <Content Include="wwwroot\bootstrap\swiper-bundle.min.js" />
@@ -213,22 +231,30 @@
     <Content Include="wwwroot\css\LoginForm.css" />
     <Content Include="wwwroot\css\profile.css" />
     <Content Include="wwwroot\css\RegisterForm.css" />
+    <Content Include="wwwroot\css\tabledisplay.css" />
+    <Content Include="wwwroot\css\teams.css" />
     <Content Include="wwwroot\css\Wastedata.css" />
     <Content Include="wwwroot\images\Awareness.png" />
     <Content Include="wwwroot\images\Awareness2.png" />
     <Content Include="wwwroot\images\bck.jpg" />
+    <Content Include="wwwroot\images\bck2.png" />
     <Content Include="wwwroot\images\bigbag.png" />
     <Content Include="wwwroot\images\ck.jpg" />
+    <Content Include="wwwroot\images\data-analyst.jpg" />
     <Content Include="wwwroot\images\database.png" />
     <Content Include="wwwroot\images\Dustbin.png" />
     <Content Include="wwwroot\images\garbage.png" />
     <Content Include="wwwroot\images\Health.png" />
+    <Content Include="wwwroot\images\kumal.png" />
     <Content Include="wwwroot\images\location.png" />
     <Content Include="wwwroot\images\logo1.png" />
     <Content Include="wwwroot\images\logo2.png" />
     <Content Include="wwwroot\images\map.png" />
     <Content Include="wwwroot\images\network.png" />
+    <Content Include="wwwroot\images\new1.png" />
+    <Content Include="wwwroot\images\pic1.png" />
     <Content Include="wwwroot\images\plastic.png" />
+    <Content Include="wwwroot\images\pra.png" />
     <Content Include="wwwroot\images\profile.jpg" />
     <Content Include="wwwroot\images\Sack.png" />
     <Content Include="wwwroot\images\segregation.png" />

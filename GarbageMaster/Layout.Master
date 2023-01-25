@@ -8,10 +8,8 @@
     <link href="wwwroot/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-    
     <link href="wwwroot/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
     <link rel="stylesheet" href="~/wwwroot/css/layout2.css"/>
 </head>
 <body>
@@ -58,24 +56,11 @@
                     </ul>
                   </div>
             </nav>
-               <%-- <header>
-            <div class="nav">
-                <img src="~/wwwroot/images/logo1.png"  runat="server"  class="logo" alt="logo" />
-                <ul>
-                    <li><asp:HyperLink ID="Home01" runat="server" Text="Home" NavigateUrl="Pages/Login.aspx" Visible=true></asp:HyperLink></li>
-                    <li><asp:HyperLink ID="Register01" runat="server" Text="Register" NavigateUrl="Pages/Login.aspx" Visible=true></asp:HyperLink></li>
-                    <li><asp:HyperLink ID="WasteData01" runat="server" Text="Update Data" NavigateUrl="Pages/Login.aspx" Visible=true></asp:HyperLink></li>
-                    <li><asp:HyperLink ID="Team01" runat="server" Text="Team" NavigateUrl="Pages/Login.aspx" Visible=true></asp:HyperLink></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><asp:HyperLink ID="Profile01" runat="server" Text="Profile" NavigateUrl="Pages/Login.aspx" Visible=false></asp:HyperLink></li>
-                </ul>
-            </div>
-           </header>--%>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
-                <div class="defcolor3 m-">
-                <footer class="row row-cols-2 row-cols-sm-8 row-cols-md-5 py-5 my-0 mx-5 border-top">
-    <div class="col mb-2 services2">
+                <div class="defcolor3">
+                <footer class="row py-5 my-0 mx-5 border-top">
+    <div class="col mb-2 me-3">
       <a href="Pages/HomePage.aspx" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
         <img src="~/wwwroot/images/logo2.png"  runat="server"  class="logo2" alt="logo" />
       </a>
@@ -84,7 +69,7 @@
     </div>
 
 
-    <div class="col mb-3 text-light quicklinks2">
+    <div class="col-2 mb-3 text-light quicklinks2">
       <h5>Quick Links</h5>
       <ul class="nav flex-column my-0">
         <li class="nav-item mb-2"><a href="Pages/HomePage.aspx" class="nav-link p-0 text-light myheight-2">Home</a></li>
@@ -95,7 +80,7 @@
       </ul>
     </div>
 
-    <div class="col mb-5 services2">
+    <div class="col-4 mb-5 services2">
       <h5>Our Services</h5>
       <ul class="nav flex-column">
         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light myheight-2">Gather waste data drom civilians</a></li>
@@ -106,7 +91,7 @@
       </ul>
     </div>
 
-    <div class="col mb-3">
+    <div class="col-4 mb-5 services2">
       <h5>Contact us</h5>
       <ul class="nav flex-column">
         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light myheight-2">Ph No: +977 986111726</a></li>
@@ -116,7 +101,7 @@
       </ul>
     </div>
   </footer>
-                    </div>
+        </div>
         </form>
    
 </body>

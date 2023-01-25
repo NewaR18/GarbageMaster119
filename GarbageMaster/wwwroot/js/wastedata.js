@@ -54,7 +54,7 @@
                             title: 'Updated Successfully'
                         })
                         setTimeout(() => { window.location = "HomePage.aspx"; }, 5000);
-                    }else {
+                    }else if(name == "spam"){
                         const Toast3 = Swal.mixin({
                             toast: true,
                             position: 'top-end',
@@ -68,7 +68,7 @@
                         })
                         Toast3.fire({
                             icon: 'error',
-                            title: 'Try Again Later'
+                            title: 'Spam data recorded, Please enter valid data only'
                         })
                     }
 

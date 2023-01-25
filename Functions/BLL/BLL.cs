@@ -80,7 +80,14 @@ namespace Functions.Business_Logic_Layer
                 sackB = Convert.ToInt32(sack);
             }
             n = smallP * 1 + bigP * 4 + dustB * 6 + sackB * 12;
-            return _dll.InsertWasteData(n,uname);
+            if (n < 1000)
+            {
+                return _dll.InsertWasteData(n, uname);
+            }
+            else
+            {
+                return "spam";
+            }
         }
     }
 }

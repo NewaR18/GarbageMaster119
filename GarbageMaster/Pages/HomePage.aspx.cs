@@ -31,5 +31,16 @@ namespace GarbageMaster
                 ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "text", "Alertforclick()", true);
             }
         }
+        protected void redirectingtonetworkpage(object sender, EventArgs e)
+        {
+            if (Session["UserName"] != null)
+            {
+                Response.Redirect("TableDisplay.aspx");
+            }
+            else
+            {
+                ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "text", "Alertforclick()", true);
+            }
+        }
     }
 }

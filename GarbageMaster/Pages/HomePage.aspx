@@ -153,7 +153,7 @@ The admin checks for the density of the waste in different regions and sends the
                             <div class="icon">
                                 <img src="../wwwroot/images/network.png" />
                             </div>
-                            <h4><a href="">Network to display Waste Data</a></h4>
+                            <h4><asp:LinkButton ID="LinkButton2" runat="server" OnClick="redirectingtonetworkpage">Network to display Waste Data</asp:LinkButton></h4>
                             <p>We not only collect the data, but provide the collected data too.</p>
                         </div>
                     </div>
