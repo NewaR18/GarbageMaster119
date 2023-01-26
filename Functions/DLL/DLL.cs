@@ -105,7 +105,7 @@ namespace Functions.Data_Link_Layer
             return response;
         }
 
-        public List<string> DatafromUserTable(string name) // tuple return type
+        public List<string> DatafromUserTable(string name)
         {
             List<string> s2 = new List<string>();
             string fname = "";
@@ -281,6 +281,56 @@ namespace Functions.Data_Link_Layer
                 }
             }
             return response;
+        }
+        public DataTable Extractdata(string name)
+        {
+            DataTable table = new DataTable();
+            using (SqlConnection conn = new SqlConnection(conval))
+            {
+                string sql = "SELECT [UsernameWH], [Waste_Data_History], [WardNoWH],[DateReviewedWH] FROM [TblWasteHistory] where UsernameWH=@name order by [DateReviewedWH] desc";
+                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                {
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = sql;
+                    cmd.Parameters.Add("@name", SqlDbType.VarChar).Value = name;
+                    using (SqlDataAdapter ad = new SqlDataAdapter(cmd))
+                    {
+                        ad.Fill(table);
+                    }
+                }
+            }
+            return table;
+        }
+        public List<string> getwarddetail(string uname)
+        {
+            List<string> list = new List<string>();
+            using (SqlCommand cmd = new SqlCommand())
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "displaywarddetails";
+                using (SqlConnection conn = new SqlConnection(conval))
+                {
+                    cmd.Connection = conn;
+                    conn.Open();
+                    cmd.Parameters.Add("@username", SqlDbType.VarChar).Value = uname;
+                    using (SqlDataReader rd = cmd.ExecuteReader())
+                    {
+                        if (rd.HasRows)
+                        {
+                            while (rd.Read())
+                            {
+                                list.Add(rd[0].ToString());
+                                list.Add(rd[1].ToString());
+                                list.Add(rd[2].ToString());
+                                list.Add(rd[3].ToString());
+                                list.Add(rd[4].ToString());
+                                list.Add(rd[5].ToString());
+                            }
+                        }
+                    }
+                }
+            }
+            return list;
         }
     }
 }
