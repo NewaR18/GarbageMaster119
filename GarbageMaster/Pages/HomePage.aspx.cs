@@ -42,5 +42,16 @@ namespace GarbageMaster
                 ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "text", "Alertforclick()", true);
             }
         }
+        protected void redirectingtomappage(object sender, EventArgs e)
+        {
+            if (Session["UserName"] != null)
+            {
+                Response.Redirect("Maps.aspx");
+            }
+            else
+            {
+                ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "text", "Alertforclick()", true);
+            }
+        }
     }
 }

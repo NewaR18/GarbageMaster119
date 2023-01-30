@@ -332,5 +332,23 @@ namespace Functions.Data_Link_Layer
             }
             return list;
         }
+        public DataTable Extractwastedata()
+        {
+            DataTable table = new DataTable();
+            using (SqlConnection conn = new SqlConnection(conval))
+            {
+                string sql = "wardsandwaste";
+                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.CommandText = sql;
+                    using (SqlDataAdapter ad = new SqlDataAdapter(cmd))
+                    {
+                        ad.Fill(table);
+                    }
+                }
+            }
+            return table;
+        }
     }
 }

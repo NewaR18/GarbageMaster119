@@ -163,7 +163,7 @@ The admin checks for the density of the waste in different regions and sends the
                             <div class="icon">
                                 <img src="../wwwroot/images/map.png" />
                             </div>
-                            <h4><a href="">Map representation of Garbage in Regions</a></h4>
+                            <h4><asp:LinkButton ID="LinkButton3" runat="server" OnClick="redirectingtomappage">Map representation of Garbage in Regions</asp:LinkButton></h4>
                             <p>Regular data is complex to understand. So, we provide map represenatation to provide better user experience</p>
                         </div>
                     </div>
@@ -173,7 +173,7 @@ The admin checks for the density of the waste in different regions and sends the
                             <div class="icon">
                                 <img src="../wwwroot/images/database.png" />
                             </div>
-                            <h4><a href="">Data Collection for analyzing the pattern</a></h4>
+                            <h4><asp:LinkButton ID="LinkButton4" runat="server" OnClick="redirectingtomappage">Data Collection for analyzing the pattern</asp:LinkButton></h4>
                             <p>We don't intend to collect the data for eternity. After gathering enough data, we will analyze and plan for the given location.</p>
                         </div>
                     </div>

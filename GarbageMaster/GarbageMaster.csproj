@@ -140,6 +140,13 @@
     <Compile Include="Pages\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Maps.aspx.cs">
+      <DependentUpon>Maps.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Maps.aspx.designer.cs">
+      <DependentUpon>Maps.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Profile.aspx.cs">
       <DependentUpon>Profile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -201,6 +208,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Pages\Login.aspx" />
+    <Content Include="Pages\Maps.aspx" />
     <Content Include="Pages\Profile.aspx" />
     <Content Include="Pages\Register.aspx" />
     <Content Include="Pages\TableDisplay.aspx" />
@@ -229,6 +237,7 @@
     <Content Include="wwwroot\css\layout.css" />
     <Content Include="wwwroot\css\layout2.css" />
     <Content Include="wwwroot\css\LoginForm.css" />
+    <Content Include="wwwroot\css\maps.css" />
     <Content Include="wwwroot\css\profile.css" />
     <Content Include="wwwroot\css\RegisterForm.css" />
     <Content Include="wwwroot\css\tabledisplay.css" />
@@ -269,6 +278,7 @@
     <Content Include="wwwroot\js\register.js" />
     <Content Include="wwwroot\js\submit.js" />
     <Content Include="Layout.Master" />
+    <Content Include="wwwroot\js\Wardmap.js" />
     <Content Include="wwwroot\js\wastedata.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />

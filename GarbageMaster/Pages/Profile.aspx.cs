@@ -86,6 +86,7 @@ namespace GarbageMaster.Pages
                 }
                 catch (Exception ex)
                 {
+                    throw ex;
                 }
             }
         }
@@ -141,6 +142,7 @@ namespace GarbageMaster.Pages
             }
             catch (Exception ex)
             {
+                throw ex;
             }
             upload2.Visible = false;
         }

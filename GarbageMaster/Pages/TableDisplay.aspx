@@ -13,7 +13,12 @@
     <link href="../wwwroot/css/TableDisplay.css" rel="stylesheet" />
     <script type="text/javascript">
         $(document).ready(function () {
-            $(".table").prepend($("<thead></thead").append($(this).find("tr:first"))).dataTable();
+            $(".table").prepend($("<thead></thead").append($(this).find("tr:first"))).DataTable()({
+                columnDefs: [
+                    { width: 300, targets: 0 }
+                ],
+                fixedColumns: false
+            });
         });
     </script>
 </asp:Content>
@@ -99,8 +104,8 @@
         </div>
         </div>
     <div class="d-flex justify-content-center mb-5">
-    <div id="tablethis" style="width:80%;">
-    <asp:GridView ID="GridView1" CssClass="table ui celled striped compact" runat="server" AutoGenerateColumns="False">
+    <div id="tablethis" style="width:65%;">
+    <asp:GridView ID="GridView1" CssClass="table ui celled striped compact" runat="server" AutoGenerateColumns="False" HeaderStyle-BackColor="Red" HeaderStyle-ForeColor="White">
         <Columns>
             <asp:BoundField DataField="UsernameWH" HeaderText="Username" SortExpression="UsernameWH"></asp:BoundField>
             <asp:BoundField DataField="Waste_Data_History" HeaderText="Waste Data(in Plastic)" SortExpression="Waste_Data_History"></asp:BoundField>
@@ -111,4 +116,5 @@
     </div>
      </div>
     </div>
+
 </asp:Content>
