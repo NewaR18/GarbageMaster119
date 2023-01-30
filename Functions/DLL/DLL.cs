@@ -350,5 +350,66 @@ namespace Functions.Data_Link_Layer
             }
             return table;
         }
+        public DataTable Extractwastewithwarddata(int n2)
+        {
+            DataTable table = new DataTable();
+            using (SqlConnection conn = new SqlConnection(conval))
+            {
+                string sql = "Wastewithward";
+                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.CommandText = sql;
+                    cmd.Parameters.Add("@ward",SqlDbType.Int).Value=n2;
+                    using (SqlDataAdapter ad = new SqlDataAdapter(cmd))
+                    {
+                        ad.Fill(table);
+                    }
+                }
+            }
+            return table;
+        }
+        public List<int> getaverage()
+        {
+            List<int> list = new List<int>();
+            using (SqlCommand cmd = new SqlCommand())
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "findaverage";
+                using (SqlConnection conn = new SqlConnection(conval))
+                {
+                    cmd.Connection = conn;
+                    conn.Open();
+                    cmd.CommandTimeout = 30;
+                    using (SqlDataReader rd = cmd.ExecuteReader())
+                    {
+                        if (rd.HasRows)
+                        {
+                            while (rd.Read())
+                            {
+                                list.Add(Convert.ToInt32(rd[0]));
+                            }
+                        }
+                    }
+                }
+            }
+            return list;
+        }
+        public void setonfire(int n)
+        {
+            using (SqlCommand cmd = new SqlCommand())
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "settozero";
+                using (SqlConnection conn = new SqlConnection(conval))
+                {
+                    cmd.Connection = conn;
+                    conn.Open();
+                    cmd.CommandTimeout = 30;
+                    cmd.Parameters.Add("@ward", SqlDbType.Int).Value = n;
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
     }
 }

@@ -133,6 +133,13 @@
       <DependentUpon>Layout.Master</DependentUpon>
     </Compile>
     <Compile Include="Models\Loaded.cs" />
+    <Compile Include="Pages\Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -182,6 +189,55 @@
     <Compile Include="Pages\Wastedata.aspx.designer.cs">
       <DependentUpon>Wastedata.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ZWard26.aspx.cs">
+      <DependentUpon>ZWard26.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ZWard26.aspx.designer.cs">
+      <DependentUpon>ZWard26.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ZWard27.aspx.cs">
+      <DependentUpon>ZWard27.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ZWard27.aspx.designer.cs">
+      <DependentUpon>ZWard27.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ZWard28.aspx.cs">
+      <DependentUpon>ZWard28.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ZWard28.aspx.designer.cs">
+      <DependentUpon>ZWard28.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ZWard29.aspx.cs">
+      <DependentUpon>ZWard29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ZWard29.aspx.designer.cs">
+      <DependentUpon>ZWard29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ZWard30.aspx.cs">
+      <DependentUpon>ZWard30.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ZWard30.aspx.designer.cs">
+      <DependentUpon>ZWard30.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ZWard31.aspx.cs">
+      <DependentUpon>ZWard31.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ZWard31.aspx.designer.cs">
+      <DependentUpon>ZWard31.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ZWard32.aspx.cs">
+      <DependentUpon>ZWard32.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ZWard32.aspx.designer.cs">
+      <DependentUpon>ZWard32.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Pages\HomePage.aspx.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
@@ -207,6 +263,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Pages\Admin.aspx" />
     <Content Include="Pages\Login.aspx" />
     <Content Include="Pages\Maps.aspx" />
     <Content Include="Pages\Profile.aspx" />
@@ -214,6 +271,13 @@
     <Content Include="Pages\TableDisplay.aspx" />
     <Content Include="Pages\Teams.aspx" />
     <Content Include="Pages\Wastedata.aspx" />
+    <Content Include="Pages\ZWard26.aspx" />
+    <Content Include="Pages\ZWard27.aspx" />
+    <Content Include="Pages\ZWard28.aspx" />
+    <Content Include="Pages\ZWard29.aspx" />
+    <Content Include="Pages\ZWard30.aspx" />
+    <Content Include="Pages\ZWard31.aspx" />
+    <Content Include="Pages\ZWard32.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Pages\HomePage.aspx" />
@@ -272,6 +336,13 @@
     <Content Include="wwwroot\images\speaker.png" />
     <Content Include="wwwroot\images\System.png" />
     <Content Include="wwwroot\images\xx.jpg" />
+    <Content Include="wwwroot\js\GeoJsonByWards\ward26.js" />
+    <Content Include="wwwroot\js\GeoJsonByWards\ward27.js" />
+    <Content Include="wwwroot\js\GeoJsonByWards\ward28.js" />
+    <Content Include="wwwroot\js\GeoJsonByWards\ward29.js" />
+    <Content Include="wwwroot\js\GeoJsonByWards\ward30.js" />
+    <Content Include="wwwroot\js\GeoJsonByWards\ward31.js" />
+    <Content Include="wwwroot\js\GeoJsonByWards\ward32.js" />
     <Content Include="wwwroot\js\jquery-3.6.3.js" />
     <Content Include="wwwroot\js\knockout-3.5.1.js" />
     <Content Include="wwwroot\js\login.js" />

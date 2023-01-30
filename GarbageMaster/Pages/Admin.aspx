@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Layout.Master" AutoEventWireup="true" CodeBehind="Maps.aspx.cs" Inherits="GarbageMaster.Pages.Maps" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Layout.Master" AutoEventWireup="true" CodeBehind="Admin.aspx.cs" Inherits="GarbageMaster.Pages.Admin" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
@@ -22,18 +22,6 @@
         });
     </script>
     <style>
-        .leaflet-popup-content-wrapper {
-            background-color:#04736a;
-            opacity:0.7;
-            color:white;
-        }
-
-        .leaflet-popup-content-wrapper .leaflet-popup-content {
-        }
-
-        .leaflet-popup-tip-container {
-            
-        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -239,15 +227,15 @@
                     } else if (feature.properties.name == "Ward27") {
                         return feature.properties.name + ": " + ward27;
                     } else if (feature.properties.name == "Ward28") {
-                        return feature.properties.name + ": " + ward28;
+                        window.location = "ZWard28.aspx";
                     } else if (feature.properties.name == "Ward29") {
-                        return feature.properties.name + ": " + ward29;
+                        window.location = "ZWard29.aspx";
                     } else if (feature.properties.name == "Ward30") {
-                        return feature.properties.name + ": " + ward30;
+                        window.location = "ZWard30.aspx";
                     } else if (feature.properties.name == "Ward31") {
-                        return feature.properties.name + ": " + ward31;
+                        window.location = "ZWard31.aspx";
                     } else if (feature.properties.name == "Ward32") {
-                        return feature.properties.name + ": " + ward32;
+                        window.location = "ZWard32.aspx";
                     } else {
                         return "Outside";
                     }
