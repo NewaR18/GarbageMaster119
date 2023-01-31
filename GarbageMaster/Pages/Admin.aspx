@@ -221,11 +221,11 @@
                     } else if (feature.properties.name == "Ward24") {
                         return feature.properties.name + ": " + ward24;
                     } else if (feature.properties.name == "Ward25") {
-                        return feature.properties.name + ": " + ward25;
+                        window.location = "ZWard25.aspx";
                     } else if (feature.properties.name == "Ward26") {
-                        return feature.properties.name + ": " + ward26;
+                        window.location = "ZWard26.aspx";
                     } else if (feature.properties.name == "Ward27") {
-                        return feature.properties.name + ": " + ward27;
+                        window.location = "ZWard27.aspx";
                     } else if (feature.properties.name == "Ward28") {
                         window.location = "ZWard28.aspx";
                     } else if (feature.properties.name == "Ward29") {

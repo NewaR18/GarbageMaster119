@@ -189,6 +189,118 @@
     <Compile Include="Pages\Wastedata.aspx.designer.cs">
       <DependentUpon>Wastedata.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ZWard10.aspx.cs">
+      <DependentUpon>ZWard10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ZWard10.aspx.designer.cs">
+      <DependentUpon>ZWard10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ZWard11.aspx.cs">
+      <DependentUpon>ZWard11.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ZWard11.aspx.designer.cs">
+      <DependentUpon>ZWard11.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ZWard12.aspx.cs">
+      <DependentUpon>ZWard12.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ZWard12.aspx.designer.cs">
+      <DependentUpon>ZWard12.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ZWard13.aspx.cs">
+      <DependentUpon>ZWard13.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ZWard13.aspx.designer.cs">
+      <DependentUpon>ZWard13.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ZWard14.aspx.cs">
+      <DependentUpon>ZWard14.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ZWard14.aspx.designer.cs">
+      <DependentUpon>ZWard14.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ZWard15.aspx.cs">
+      <DependentUpon>ZWard15.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ZWard15.aspx.designer.cs">
+      <DependentUpon>ZWard15.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ZWard16.aspx.cs">
+      <DependentUpon>ZWard16.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ZWard16.aspx.designer.cs">
+      <DependentUpon>ZWard16.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ZWard17.aspx.cs">
+      <DependentUpon>ZWard17.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ZWard17.aspx.designer.cs">
+      <DependentUpon>ZWard17.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ZWard18.aspx.cs">
+      <DependentUpon>ZWard18.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ZWard18.aspx.designer.cs">
+      <DependentUpon>ZWard18.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ZWard19.aspx.cs">
+      <DependentUpon>ZWard19.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ZWard19.aspx.designer.cs">
+      <DependentUpon>ZWard19.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ZWard20.aspx.cs">
+      <DependentUpon>ZWard20.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ZWard20.aspx.designer.cs">
+      <DependentUpon>ZWard20.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ZWard21.aspx.cs">
+      <DependentUpon>ZWard21.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ZWard21.aspx.designer.cs">
+      <DependentUpon>ZWard21.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ZWard22.aspx.cs">
+      <DependentUpon>ZWard22.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ZWard22.aspx.designer.cs">
+      <DependentUpon>ZWard22.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ZWard23.aspx.cs">
+      <DependentUpon>ZWard23.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ZWard23.aspx.designer.cs">
+      <DependentUpon>ZWard23.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ZWard24.aspx.cs">
+      <DependentUpon>ZWard24.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ZWard24.aspx.designer.cs">
+      <DependentUpon>ZWard24.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ZWard25.aspx.cs">
+      <DependentUpon>ZWard25.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ZWard25.aspx.designer.cs">
+      <DependentUpon>ZWard25.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ZWard26.aspx.cs">
       <DependentUpon>ZWard26.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -238,6 +350,48 @@
     <Compile Include="Pages\ZWard32.aspx.designer.cs">
       <DependentUpon>ZWard32.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ZWard4.aspx.cs">
+      <DependentUpon>ZWard4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ZWard4.aspx.designer.cs">
+      <DependentUpon>ZWard4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ZWard5.aspx.cs">
+      <DependentUpon>ZWard5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ZWard5.aspx.designer.cs">
+      <DependentUpon>ZWard5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ZWard6.aspx.cs">
+      <DependentUpon>ZWard6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ZWard6.aspx.designer.cs">
+      <DependentUpon>ZWard6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ZWard7.aspx.cs">
+      <DependentUpon>ZWard7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ZWard7.aspx.designer.cs">
+      <DependentUpon>ZWard7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ZWard8.aspx.cs">
+      <DependentUpon>ZWard8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ZWard8.aspx.designer.cs">
+      <DependentUpon>ZWard8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ZWard9.aspx.cs">
+      <DependentUpon>ZWard9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ZWard9.aspx.designer.cs">
+      <DependentUpon>ZWard9.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Pages\HomePage.aspx.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
@@ -271,6 +425,22 @@
     <Content Include="Pages\TableDisplay.aspx" />
     <Content Include="Pages\Teams.aspx" />
     <Content Include="Pages\Wastedata.aspx" />
+    <Content Include="Pages\ZWard10.aspx" />
+    <Content Include="Pages\ZWard11.aspx" />
+    <Content Include="Pages\ZWard12.aspx" />
+    <Content Include="Pages\ZWard13.aspx" />
+    <Content Include="Pages\ZWard14.aspx" />
+    <Content Include="Pages\ZWard15.aspx" />
+    <Content Include="Pages\ZWard16.aspx" />
+    <Content Include="Pages\ZWard17.aspx" />
+    <Content Include="Pages\ZWard18.aspx" />
+    <Content Include="Pages\ZWard19.aspx" />
+    <Content Include="Pages\ZWard20.aspx" />
+    <Content Include="Pages\ZWard21.aspx" />
+    <Content Include="Pages\ZWard22.aspx" />
+    <Content Include="Pages\ZWard23.aspx" />
+    <Content Include="Pages\ZWard24.aspx" />
+    <Content Include="Pages\ZWard25.aspx" />
     <Content Include="Pages\ZWard26.aspx" />
     <Content Include="Pages\ZWard27.aspx" />
     <Content Include="Pages\ZWard28.aspx" />
@@ -278,6 +448,12 @@
     <Content Include="Pages\ZWard30.aspx" />
     <Content Include="Pages\ZWard31.aspx" />
     <Content Include="Pages\ZWard32.aspx" />
+    <Content Include="Pages\ZWard4.aspx" />
+    <Content Include="Pages\ZWard5.aspx" />
+    <Content Include="Pages\ZWard6.aspx" />
+    <Content Include="Pages\ZWard7.aspx" />
+    <Content Include="Pages\ZWard8.aspx" />
+    <Content Include="Pages\ZWard9.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Pages\HomePage.aspx" />
@@ -336,6 +512,22 @@
     <Content Include="wwwroot\images\speaker.png" />
     <Content Include="wwwroot\images\System.png" />
     <Content Include="wwwroot\images\xx.jpg" />
+    <Content Include="wwwroot\js\GeoJsonByWards\ward10.js" />
+    <Content Include="wwwroot\js\GeoJsonByWards\ward11.js" />
+    <Content Include="wwwroot\js\GeoJsonByWards\ward12.js" />
+    <Content Include="wwwroot\js\GeoJsonByWards\ward13.js" />
+    <Content Include="wwwroot\js\GeoJsonByWards\ward14.js" />
+    <Content Include="wwwroot\js\GeoJsonByWards\ward15.js" />
+    <Content Include="wwwroot\js\GeoJsonByWards\ward16.js" />
+    <Content Include="wwwroot\js\GeoJsonByWards\ward17.js" />
+    <Content Include="wwwroot\js\GeoJsonByWards\ward18.js" />
+    <Content Include="wwwroot\js\GeoJsonByWards\ward19.js" />
+    <Content Include="wwwroot\js\GeoJsonByWards\ward20.js" />
+    <Content Include="wwwroot\js\GeoJsonByWards\ward21.js" />
+    <Content Include="wwwroot\js\GeoJsonByWards\ward22.js" />
+    <Content Include="wwwroot\js\GeoJsonByWards\ward23.js" />
+    <Content Include="wwwroot\js\GeoJsonByWards\ward24.js" />
+    <Content Include="wwwroot\js\GeoJsonByWards\ward25.js" />
     <Content Include="wwwroot\js\GeoJsonByWards\ward26.js" />
     <Content Include="wwwroot\js\GeoJsonByWards\ward27.js" />
     <Content Include="wwwroot\js\GeoJsonByWards\ward28.js" />
@@ -343,6 +535,11 @@
     <Content Include="wwwroot\js\GeoJsonByWards\ward30.js" />
     <Content Include="wwwroot\js\GeoJsonByWards\ward31.js" />
     <Content Include="wwwroot\js\GeoJsonByWards\ward32.js" />
+    <Content Include="wwwroot\js\GeoJsonByWards\ward5.js" />
+    <Content Include="wwwroot\js\GeoJsonByWards\ward6.js" />
+    <Content Include="wwwroot\js\GeoJsonByWards\ward7.js" />
+    <Content Include="wwwroot\js\GeoJsonByWards\ward8.js" />
+    <Content Include="wwwroot\js\GeoJsonByWards\ward9.js" />
     <Content Include="wwwroot\js\jquery-3.6.3.js" />
     <Content Include="wwwroot\js\knockout-3.5.1.js" />
     <Content Include="wwwroot\js\login.js" />
