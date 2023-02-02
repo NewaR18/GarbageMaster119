@@ -29,7 +29,7 @@ namespace GarbageMaster.Pages
                 GetData();
                 string conval = ConfigurationManager.ConnectionStrings["myconnection"].ConnectionString;
                 List<int> list = _dll.getaverage();
-                Label5.Text = Convert.ToString(4);
+                Label5.Text = Convert.ToString(list[4]);
             }
         }
         private void GetData()

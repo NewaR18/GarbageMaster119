@@ -44,9 +44,9 @@
                 </div>
                 <div class="social">
                   <a href="https://twitter.com/sudipsh24828223"><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href="https://np.linkedin.com/in/sudip-shrestha-48a63621b"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100009218602207"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/sudip_.shrestha/"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/sudip-shrestha-48a63621b/"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -61,7 +61,7 @@
                 </div>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.facebook.com/EziOPratik"><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
@@ -78,9 +78,9 @@
                 </div>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.facebook.com/kumal12.anil"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/kumal_siri/"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/anil-kumal-675a52183/"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>

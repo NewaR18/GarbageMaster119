@@ -10,3 +10,9 @@ C:\Users\sudip.shrestha\source\repos\GarbageMaster\GarbageMaster\Functions\obj\D
 C:\Users\sudip.shrestha\source\repos\GarbageMaster\GarbageMaster\Functions\obj\Debug\Functions.csproj.CoreCompileInputs.cache
 C:\Users\sudip.shrestha\source\repos\GarbageMaster\GarbageMaster\Functions\obj\Debug\Functions.dll
 C:\Users\sudip.shrestha\source\repos\GarbageMaster\GarbageMaster\Functions\obj\Debug\Functions.pdb
+C:\Users\sudip\source\repos\Infodev\Trainee\GarbageMasterMain\GarbageMaster119\Functions\bin\Debug\Functions.dll
+C:\Users\sudip\source\repos\Infodev\Trainee\GarbageMasterMain\GarbageMaster119\Functions\bin\Debug\Functions.pdb
+C:\Users\sudip\source\repos\Infodev\Trainee\GarbageMasterMain\GarbageMaster119\Functions\obj\Debug\Functions.csproj.AssemblyReference.cache
+C:\Users\sudip\source\repos\Infodev\Trainee\GarbageMasterMain\GarbageMaster119\Functions\obj\Debug\Functions.csproj.CoreCompileInputs.cache
+C:\Users\sudip\source\repos\Infodev\Trainee\GarbageMasterMain\GarbageMaster119\Functions\obj\Debug\Functions.dll
+C:\Users\sudip\source\repos\Infodev\Trainee\GarbageMasterMain\GarbageMaster119\Functions\obj\Debug\Functions.pdb

@@ -173,53 +173,53 @@
             onEachFeature: function (feature, layer) {
                 layer.bindPopup(function (layer) {
                     if (feature.properties.name == "Ward1") {
-                        return feature.properties.name + ": " + ward1;
+                        window.location = "ZWard1.aspx";
                     } else if (feature.properties.name == "Ward2") {
-                        return feature.properties.name + ": " + ward2;
+                        window.location = "ZWard2.aspx";
                     } else if (feature.properties.name == "Ward3") {
-                        return feature.properties.name + ": " + ward3;
+                        window.location = "ZWard3.aspx";
                     } else if (feature.properties.name == "Ward4") {
-                        return feature.properties.name + ": " + ward4;
+                        window.location = "ZWard4.aspx";
                     } else if (feature.properties.name == "Ward5") {
-                        return feature.properties.name + ": " + ward5;
+                        window.location = "ZWard5.aspx";
                     } else if (feature.properties.name == "Ward6") {
-                        return feature.properties.name + ": " + ward6;
+                        window.location = "ZWard6.aspx";
                     } else if (feature.properties.name == "Ward7") {
-                        return feature.properties.name + ": " + ward7;
+                        window.location = "ZWard7.aspx";
                     } else if (feature.properties.name == "Ward8") {
-                        return feature.properties.name + ": " + ward8;
+                        window.location = "ZWard8.aspx";
                     } else if (feature.properties.name == "Ward9") {
-                        return feature.properties.name + ": " + ward9;
+                        window.location = "ZWard9.aspx";
                     } else if (feature.properties.name == "Ward10") {
-                        return feature.properties.name + ": " + ward10;
+                        window.location = "ZWard10.aspx";
                     } else if (feature.properties.name == "Ward11") {
-                        return feature.properties.name + ": " + ward11;
+                        window.location = "ZWard11.aspx";
                     } else if (feature.properties.name == "Ward12") {
-                        return feature.properties.name + ": " + ward12;
+                        window.location = "ZWard12.aspx";
                     } else if (feature.properties.name == "Ward13") {
-                        return feature.properties.name + ": " + ward13;
+                        window.location = "ZWard13.aspx";
                     } else if (feature.properties.name == "Ward14") {
-                        return feature.properties.name + ": " + ward14;
+                        window.location = "ZWard14.aspx";
                     } else if (feature.properties.name == "Ward15") {
-                        return feature.properties.name + ": " + ward15;
+                        window.location = "ZWard15.aspx";
                     } else if (feature.properties.name == "Ward16") {
-                        return feature.properties.name + ": " + ward16;
+                        window.location = "ZWard16.aspx";
                     } else if (feature.properties.name == "Ward17") {
-                        return feature.properties.name + ": " + ward17;
+                        window.location = "ZWard17.aspx";
                     } else if (feature.properties.name == "Ward18") {
-                        return feature.properties.name + ": " + ward18;
+                        window.location = "ZWard18.aspx";
                     } else if (feature.properties.name == "Ward19") {
-                        return feature.properties.name + ": " + ward19;
+                        window.location = "ZWard19.aspx";
                     } else if (feature.properties.name == "Ward20") {
-                        return feature.properties.name + ": " + ward20;
+                        window.location = "ZWard20.aspx";
                     } else if (feature.properties.name == "Ward21") {
-                        return feature.properties.name + ": " + ward21;
+                        window.location = "ZWard21.aspx";
                     } else if (feature.properties.name == "Ward22") {
-                        return feature.properties.name + ": " + ward22;
+                        window.location = "ZWard22.aspx";
                     } else if (feature.properties.name == "Ward23") {
-                        return feature.properties.name + ": " + ward23;
+                        window.location = "ZWard23.aspx";
                     } else if (feature.properties.name == "Ward24") {
-                        return feature.properties.name + ": " + ward24;
+                        window.location = "ZWard24.aspx";
                     } else if (feature.properties.name == "Ward25") {
                         window.location = "ZWard25.aspx";
                     } else if (feature.properties.name == "Ward26") {
