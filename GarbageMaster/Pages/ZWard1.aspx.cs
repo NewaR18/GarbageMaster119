@@ -11,10 +11,10 @@ using System.Web.UI.WebControls;
 
 namespace GarbageMaster.Pages
 {
-    public partial class ZWard4 : System.Web.UI.Page
+    public partial class ZWard1 : System.Web.UI.Page
     {
         public DLL _dll;
-        public ZWard4()
+        public ZWard1()
         {
             _dll = new DLL();
         }
@@ -29,12 +29,12 @@ namespace GarbageMaster.Pages
                 GetData();
                 string conval = ConfigurationManager.ConnectionStrings["myconnection"].ConnectionString;
                 List<int> list = _dll.getaverage();
-                Label4.Text = Convert.ToString(3);
+                Label1.Text = Convert.ToString(0);
             }
         }
         private void GetData()
         {
-            DataTable table = _dll.Extractwastewithwarddata(4);
+            DataTable table = _dll.Extractwastewithwarddata(1);
             GridView1.DataSource = table;
             int a = table.Rows.Count;
             if (a != 0)
@@ -45,8 +45,8 @@ namespace GarbageMaster.Pages
         }
         protected void TruckSent(object sender, EventArgs e)
         {
-            _dll.setonfire(4);
-            Response.Redirect("ZWard4.aspx");
+            _dll.setonfire(1);
+            Response.Redirect("ZWard1.aspx");
         }
     }
 }

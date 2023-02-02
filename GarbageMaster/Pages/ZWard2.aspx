@@ -1,9 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Layout.Master" AutoEventWireup="true" CodeBehind="ZWard4.aspx.cs" Inherits="GarbageMaster.Pages.ZWard4" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Layout.Master" AutoEventWireup="true" CodeBehind="ZWard2.aspx.cs" Inherits="GarbageMaster.Pages.ZWard2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
     <link href="../wwwroot/bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <script src="../wwwroot/js/GeoJsonByWards/ward4.js"></script>
+    <script src="../wwwroot/js/GeoJsonByWards/ward2.js"></script>
     <script src="../wwwroot/js/jquery-3.6.3.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.8/semantic.min.css" rel="stylesheet" />
     <link href="https://cdn.datatables.net/1.13.1/css/dataTables.semanticui.min.css" rel="stylesheet" />
@@ -55,13 +55,13 @@
     <div class="d-flex justify-content-center mb-5">
     <div id = "map" style = "width:900px; height:580px;"></div>
     </div>
-    <asp:Label ID="Label4" runat="server" Text=""></asp:Label>
+    <asp:Label ID="Label2" runat="server" Text=""></asp:Label>
 
     <script>
-        var ward4 = parseInt(document.getElementById("ContentPlaceHolder1_Label4").innerHTML);
-        document.getElementById("ContentPlaceHolder1_Label4").style.display = "none";
+        var ward2 = parseInt(document.getElementById("ContentPlaceHolder1_Label2").innerHTML);
+        document.getElementById("ContentPlaceHolder1_Label2").style.display = "none";
 
-        var map = L.map('map').setView([27.725, 85.337], 15);
+        var map = L.map('map').setView([27.72, 85.328], 15);
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
             minZoom: 15,
@@ -74,11 +74,11 @@
                         d > 100 ? '#e53935' :
                             '#e53935';
         }
-        L.geoJSON(ward4JSON, {
+        L.geoJSON(ward2JSON, {
             onEachFeature: function (feature, layer) {
                 layer.bindPopup(function (layer) {
-                    if (feature.properties.name == "Ward4") {
-                        return feature.properties.name + ": " + ward4;
+                    if (feature.properties.name == "Ward2") {
+                        return feature.properties.name + ": " + ward2;
                     } else {
                         return "Outside";
                     }
@@ -86,10 +86,8 @@
             },
             style: function (feature) {
                 switch (feature.properties.name) {
-                    case 'Ward4':
-                        console.log(ward4);
-                        return {
-                        fillColor: getColor(ward4),
+                    case 'Ward2': return {
+                        fillColor: getColor(ward2),
                         weight: 2,
                         opacity: 1,
                         color: 'white',

@@ -189,6 +189,13 @@
     <Compile Include="Pages\Wastedata.aspx.designer.cs">
       <DependentUpon>Wastedata.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ZWard1.aspx.cs">
+      <DependentUpon>ZWard1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ZWard1.aspx.designer.cs">
+      <DependentUpon>ZWard1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ZWard10.aspx.cs">
       <DependentUpon>ZWard10.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -259,6 +266,13 @@
     <Compile Include="Pages\ZWard19.aspx.designer.cs">
       <DependentUpon>ZWard19.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ZWard2.aspx.cs">
+      <DependentUpon>ZWard2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ZWard2.aspx.designer.cs">
+      <DependentUpon>ZWard2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ZWard20.aspx.cs">
       <DependentUpon>ZWard20.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -328,6 +342,13 @@
     </Compile>
     <Compile Include="Pages\ZWard29.aspx.designer.cs">
       <DependentUpon>ZWard29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ZWard3.aspx.cs">
+      <DependentUpon>ZWard3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ZWard3.aspx.designer.cs">
+      <DependentUpon>ZWard3.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\ZWard30.aspx.cs">
       <DependentUpon>ZWard30.aspx</DependentUpon>
@@ -425,6 +446,7 @@
     <Content Include="Pages\TableDisplay.aspx" />
     <Content Include="Pages\Teams.aspx" />
     <Content Include="Pages\Wastedata.aspx" />
+    <Content Include="Pages\ZWard1.aspx" />
     <Content Include="Pages\ZWard10.aspx" />
     <Content Include="Pages\ZWard11.aspx" />
     <Content Include="Pages\ZWard12.aspx" />
@@ -435,6 +457,7 @@
     <Content Include="Pages\ZWard17.aspx" />
     <Content Include="Pages\ZWard18.aspx" />
     <Content Include="Pages\ZWard19.aspx" />
+    <Content Include="Pages\ZWard2.aspx" />
     <Content Include="Pages\ZWard20.aspx" />
     <Content Include="Pages\ZWard21.aspx" />
     <Content Include="Pages\ZWard22.aspx" />
@@ -445,6 +468,7 @@
     <Content Include="Pages\ZWard27.aspx" />
     <Content Include="Pages\ZWard28.aspx" />
     <Content Include="Pages\ZWard29.aspx" />
+    <Content Include="Pages\ZWard3.aspx" />
     <Content Include="Pages\ZWard30.aspx" />
     <Content Include="Pages\ZWard31.aspx" />
     <Content Include="Pages\ZWard32.aspx" />
@@ -512,6 +536,7 @@
     <Content Include="wwwroot\images\speaker.png" />
     <Content Include="wwwroot\images\System.png" />
     <Content Include="wwwroot\images\xx.jpg" />
+    <Content Include="wwwroot\js\GeoJsonByWards\ward1.js" />
     <Content Include="wwwroot\js\GeoJsonByWards\ward10.js" />
     <Content Include="wwwroot\js\GeoJsonByWards\ward11.js" />
     <Content Include="wwwroot\js\GeoJsonByWards\ward12.js" />
@@ -522,6 +547,7 @@
     <Content Include="wwwroot\js\GeoJsonByWards\ward17.js" />
     <Content Include="wwwroot\js\GeoJsonByWards\ward18.js" />
     <Content Include="wwwroot\js\GeoJsonByWards\ward19.js" />
+    <Content Include="wwwroot\js\GeoJsonByWards\ward2.js" />
     <Content Include="wwwroot\js\GeoJsonByWards\ward20.js" />
     <Content Include="wwwroot\js\GeoJsonByWards\ward21.js" />
     <Content Include="wwwroot\js\GeoJsonByWards\ward22.js" />
@@ -532,9 +558,11 @@
     <Content Include="wwwroot\js\GeoJsonByWards\ward27.js" />
     <Content Include="wwwroot\js\GeoJsonByWards\ward28.js" />
     <Content Include="wwwroot\js\GeoJsonByWards\ward29.js" />
+    <Content Include="wwwroot\js\GeoJsonByWards\ward3.js" />
     <Content Include="wwwroot\js\GeoJsonByWards\ward30.js" />
     <Content Include="wwwroot\js\GeoJsonByWards\ward31.js" />
     <Content Include="wwwroot\js\GeoJsonByWards\ward32.js" />
+    <Content Include="wwwroot\js\GeoJsonByWards\ward4.js" />
     <Content Include="wwwroot\js\GeoJsonByWards\ward5.js" />
     <Content Include="wwwroot\js\GeoJsonByWards\ward6.js" />
     <Content Include="wwwroot\js\GeoJsonByWards\ward7.js" />
