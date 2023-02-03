@@ -9,15 +9,18 @@ using System.Reflection.Emit;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Functions.Business_Logic_Layer;
 
 namespace GarbageMaster.Pages
 {
     public partial class ZWard29 : System.Web.UI.Page
     {
         public DLL _dll;
+        public BLL _bll;
         public ZWard29()
         {
             _dll = new DLL();
+            _bll = new BLL();
         }
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -47,6 +50,7 @@ namespace GarbageMaster.Pages
         protected void TruckSent(object sender, EventArgs e)
         {
             _dll.setonfire(29);
+            _bll.mailsend(Label29.Text, 29);
             Response.Redirect("ZWard29.aspx");
         }
     }

@@ -154,6 +154,20 @@
     <Compile Include="Pages\Maps.aspx.designer.cs">
       <DependentUpon>Maps.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\NewPassword.aspx.cs">
+      <DependentUpon>NewPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\NewPassword.aspx.designer.cs">
+      <DependentUpon>NewPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\pinenter.aspx.cs">
+      <DependentUpon>pinenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\pinenter.aspx.designer.cs">
+      <DependentUpon>pinenter.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Profile.aspx.cs">
       <DependentUpon>Profile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -167,6 +181,13 @@
     </Compile>
     <Compile Include="Pages\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\TableDisplay.aspx.cs">
       <DependentUpon>TableDisplay.aspx</DependentUpon>
@@ -441,8 +462,11 @@
     <Content Include="Pages\Admin.aspx" />
     <Content Include="Pages\Login.aspx" />
     <Content Include="Pages\Maps.aspx" />
+    <Content Include="Pages\NewPassword.aspx" />
+    <Content Include="Pages\pinenter.aspx" />
     <Content Include="Pages\Profile.aspx" />
     <Content Include="Pages\Register.aspx" />
+    <Content Include="Pages\ResetPassword.aspx" />
     <Content Include="Pages\TableDisplay.aspx" />
     <Content Include="Pages\Teams.aspx" />
     <Content Include="Pages\Wastedata.aspx" />
@@ -536,6 +560,9 @@
     <Content Include="wwwroot\images\speaker.png" />
     <Content Include="wwwroot\images\System.png" />
     <Content Include="wwwroot\images\xx.jpg" />
+    <Content Include="wwwroot\js\NewPassword.js" />
+    <Content Include="wwwroot\js\pinenter.js" />
+    <Content Include="wwwroot\js\reset.js" />
     <Content Include="wwwroot\js\GeoJsonByWards\ward1.js" />
     <Content Include="wwwroot\js\GeoJsonByWards\ward10.js" />
     <Content Include="wwwroot\js\GeoJsonByWards\ward11.js" />

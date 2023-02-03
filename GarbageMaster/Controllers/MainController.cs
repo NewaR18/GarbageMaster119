@@ -36,5 +36,25 @@ namespace GarbageMaster.Controllers
             string uname = Session["UserName"].ToString();
             return Json(new { Name = _repo.WasteData(SP, BP, DB, sack,uname) }, JsonRequestBehavior.AllowGet);
         }
+        [HttpPost]
+        public JsonResult CheckEmail(string Email)
+        {
+            return Json(new { Name = _repo.checkemail(Email) }, JsonRequestBehavior.AllowGet);
+        }
+        [HttpPost]
+        public JsonResult SendEmail(string Email)
+        {
+            return Json(new { Name = _repo.sendemail(Email) }, JsonRequestBehavior.AllowGet);
+        }
+        [HttpPost]
+        public JsonResult CheckPin(string Pin)
+        {
+            return Json(new { Name = _repo.checkpin(Pin) }, JsonRequestBehavior.AllowGet);
+        }
+        [HttpPost]
+        public JsonResult ResetPassword(string Password)
+        {
+            return Json(new { Name = _repo.resetpassword(Password) }, JsonRequestBehavior.AllowGet);
+        }
     }
 }

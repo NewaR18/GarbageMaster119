@@ -8,15 +8,19 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Functions.Business_Logic_Layer;
+using System.Reflection.Emit;
 
 namespace GarbageMaster.Pages
 {
     public partial class ZWard31 : System.Web.UI.Page
     {
         public DLL _dll;
+        public BLL _bll;
         public ZWard31()
         {
             _dll = new DLL();
+            _bll= new BLL();
         }
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -28,28 +32,7 @@ namespace GarbageMaster.Pages
             {
                 GetData();
                 string conval = ConfigurationManager.ConnectionStrings["myconnection"].ConnectionString;
-                List<int> list = new List<int>();
-                using (SqlCommand cmd = new SqlCommand())
-                {
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.CommandText = "findaverage";
-                    using (SqlConnection conn = new SqlConnection(conval))
-                    {
-                        cmd.Connection = conn;
-                        conn.Open();
-                        cmd.CommandTimeout = 30;
-                        using (SqlDataReader rd = cmd.ExecuteReader())
-                        {
-                            if (rd.HasRows)
-                            {
-                                while (rd.Read())
-                                {
-                                    list.Add(Convert.ToInt32(rd[0]));
-                                }
-                            }
-                        }
-                    }
-                }
+                List<int> list = _dll.getaverage();
                 Label31.Text = Convert.ToString(list[30]);
             }
         }
@@ -66,21 +49,9 @@ namespace GarbageMaster.Pages
         }
         protected void TruckSent(object sender, EventArgs e)
         {
-            string conval = ConfigurationManager.ConnectionStrings["myconnection"].ConnectionString;
-            using (SqlCommand cmd = new SqlCommand())
-            {
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "settozero";
-                using (SqlConnection conn = new SqlConnection(conval))
-                {
-                    cmd.Connection = conn;
-                    conn.Open();
-                    cmd.CommandTimeout = 30;
-                    cmd.Parameters.Add("@ward", SqlDbType.Int).Value = 31;
-                    cmd.ExecuteNonQuery();
-                    Response.Redirect("ZWard31.aspx");
-                }
-            }
+            _dll.setonfire(31);
+            _bll.mailsend(Label31.Text, 31);
+            Response.Redirect("ZWard31.aspx");
         }
     }
 }

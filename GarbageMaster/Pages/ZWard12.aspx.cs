@@ -1,4 +1,5 @@
-﻿using Functions.Data_Link_Layer;
+﻿using Functions.Business_Logic_Layer;
+using Functions.Data_Link_Layer;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -14,9 +15,11 @@ namespace GarbageMaster.Pages
     public partial class ZWard12 : System.Web.UI.Page
     {
         public DLL _dll;
+        public BLL _bll;
         public ZWard12()
         {
             _dll = new DLL();
+            _bll= new BLL();
         }
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -46,6 +49,7 @@ namespace GarbageMaster.Pages
         protected void TruckSent(object sender, EventArgs e)
         {
             _dll.setonfire(12);
+            _bll.mailsend(Label12.Text, 12);
             Response.Redirect("ZWard12.aspx");
         }
     }

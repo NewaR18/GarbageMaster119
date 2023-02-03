@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+using System.Web;
 using System.Xml.Linq;
 
 namespace Functions.Data_Link_Layer
@@ -410,6 +411,64 @@ namespace Functions.Data_Link_Layer
                     cmd.ExecuteNonQuery();
                 }
             }
+        }
+
+        public string CheckEmail(string email)
+        {
+            string response = "";
+            using (SqlCommand cmd = new SqlCommand())
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "checkforemail";
+                using (SqlConnection conn = new SqlConnection(conval))
+                {
+                    cmd.Connection = conn;
+                    conn.Open();
+                    cmd.CommandTimeout = 30;
+                    cmd.Parameters.Add("@email",SqlDbType.VarChar).Value = email;
+                    using (SqlDataReader rd = cmd.ExecuteReader())
+                    {
+                        if (rd.HasRows)
+                        {
+                            while (rd.Read())
+                            {
+                                response=rd.GetString(0);
+                            }
+                        }
+                    }
+                }
+            }
+            return response;
+        }
+        public string ResetPassword(string Password, string email)
+        {
+            string response = "";
+            using (SqlCommand cmd = new SqlCommand())
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "resetpassword";
+                using (SqlConnection conn = new SqlConnection(conval))
+                {
+                    cmd.Connection = conn;
+                    conn.Open();
+                    cmd.CommandTimeout = 30;
+                    cmd.Parameters.Add("@email", SqlDbType.VarChar).Value = email;
+                    cmd.Parameters.Add("@password", SqlDbType.VarChar).Value = Password;
+                    using (SqlDataReader rd = cmd.ExecuteReader())
+                    {
+                        if (rd.HasRows)
+                        {
+                            while (rd.Read())
+                            {
+                                response = rd.GetString(0);
+                            }
+                        }
+                    }
+                }
+            }
+            HttpContext.Current.Session["Code"] = null;
+            HttpContext.Current.Session["Email"] = null;
+            return response;
         }
     }
 }

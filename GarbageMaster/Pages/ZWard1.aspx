@@ -32,6 +32,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <asp:Label ID="lblTest" runat="server" Text=""></asp:Label>
     <div class="d-flex justify-content-center myfontstyle2 mt-4">
         <p>Map Representation of Garbage Data</p>
     </div>
