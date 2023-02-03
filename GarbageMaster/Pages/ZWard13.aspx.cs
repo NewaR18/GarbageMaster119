@@ -20,7 +20,7 @@ namespace GarbageMaster.Pages
         }
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["UserName"] == null)
+            if(Session["UserName"] == null || Session["Role"] == null)
             {
                 Response.Redirect("HomePage.aspx");
             }

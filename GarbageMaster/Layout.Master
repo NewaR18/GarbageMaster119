@@ -38,6 +38,9 @@
                         <li class="nav-item">
                         <asp:LinkButton ID="LinkButton5" class="nav-link myownlink" runat="server" OnClick="Contact_Click">Contacts</asp:LinkButton>
                       </li>
+                        <li class="nav-item">
+                        <asp:LinkButton ID="Admin01" class="nav-link myownlink" runat="server" OnClick="Admin_Click">Admin</asp:LinkButton>
+                      </li>
                       <li class="nav-item">
                         <asp:LinkButton ID="Register01" class="nav-link myownlink registerlogin2 pt-0 pb-0 mt-2" runat="server" OnClick="Register_Click" Visible=true>Register/Login</asp:LinkButton>
                       </li>

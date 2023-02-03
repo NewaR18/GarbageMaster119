@@ -8,11 +8,16 @@ namespace GarbageMaster
         protected void Page_Load(object sender, EventArgs e)
         {
             LinkButton3.Visible = false;
+            Admin01.Visible = false;
             if (Session["UserName"] != null)
             {
                 Profile01.Visible = true;
                 Register01.Visible = false;
                 LinkButton3.Visible = true;
+            }
+            if (Session["Role"] != null)
+            {
+                Admin01.Visible = true;
             }
         }
 
@@ -38,7 +43,10 @@ namespace GarbageMaster
         {
             Response.Redirect("../Pages/Teams.aspx");
         }
-
+        protected void Admin_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("../Pages/Admin.aspx");
+        }
         protected void Contact_Click(object sender, EventArgs e)
         {
             Response.Redirect("../Pages/HomePage.aspx#contact");
@@ -57,6 +65,7 @@ namespace GarbageMaster
         protected void Logout_Click(object sender, EventArgs e)
         {
             HttpContext.Current.Session["UserName"] = null;
+            HttpContext.Current.Session["Role"] = null;
             Response.Redirect("../Pages/HomePage.aspx");
         }
     }

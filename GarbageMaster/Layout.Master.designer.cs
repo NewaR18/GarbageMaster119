@@ -78,6 +78,15 @@ namespace GarbageMaster
         protected global::System.Web.UI.WebControls.LinkButton LinkButton5;
 
         /// <summary>
+        /// Admin01 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton Admin01;
+
+        /// <summary>
         /// Register01 control.
         /// </summary>
         /// <remarks>

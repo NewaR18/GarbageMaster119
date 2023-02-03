@@ -36,7 +36,7 @@
         <p>Map Representation of Garbage Data</p>
     </div>
     <div class="d-flex justify-content-center">
-        <asp:Label ID="lblAverage" runat="server" Text="Average"></asp:Label>
+        <asp:Label ID="lblAverage" runat="server" Text="Ward 30"></asp:Label>
     </div>
     <div class="d-flex justify-content-center mt-4 mb-5">
     <div id="tablethis" style="width:35%;">
