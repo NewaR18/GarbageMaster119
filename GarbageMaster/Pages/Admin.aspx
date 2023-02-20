@@ -83,7 +83,7 @@
         var ward2 = parseInt(document.getElementById("ContentPlaceHolder1_Label2").innerHTML);
         var ward3 = parseInt(document.getElementById("ContentPlaceHolder1_Label3").innerHTML);
         var ward4 = parseInt(document.getElementById("ContentPlaceHolder1_Label4").innerHTML);
-        var ward5 = parseInt(document.getElementById("ContentPlaceHolder1_Label4").innerHTML);
+        var ward5 = parseInt(document.getElementById("ContentPlaceHolder1_Label5").innerHTML);
         var ward6 = parseInt(document.getElementById("ContentPlaceHolder1_Label6").innerHTML);
         var ward7 = parseInt(document.getElementById("ContentPlaceHolder1_Label7").innerHTML);
         var ward8 = parseInt(document.getElementById("ContentPlaceHolder1_Label8").innerHTML);

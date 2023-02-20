@@ -49,8 +49,11 @@ namespace GarbageMaster.Pages
         }
         protected void TruckSent(object sender, EventArgs e)
         {
-            _dll.setonfire(1);
             _bll.mailsend(Label1.Text,1);
+        }
+        protected void Checkedout(object sender, EventArgs e)
+        {
+            _dll.setonfire(1);
             Response.Redirect("ZWard1.aspx");
         }
     }

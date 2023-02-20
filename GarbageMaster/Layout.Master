@@ -75,11 +75,11 @@
     <div class="col-2 mb-3 text-light quicklinks2">
       <h5>Quick Links</h5>
       <ul class="nav flex-column my-0">
-        <li class="nav-item mb-2"><a href="Pages/HomePage.aspx" class="nav-link p-0 text-light myheight-2">Home</a></li>
-        <li class="nav-item mb-2"><a href="Pages/Register.aspx" class="nav-link p-0 text-light myheight-2">Register</a></li>
-        <li class="nav-item mb-2"><a href="Pages/HomePage.aspx#about" class="nav-link p-0 text-light myheight-2">Objectives</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light myheight-2">Overview</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light myheight-2">Team</a></li>
+        <li class="nav-item mb-2"><a href="HomePage.aspx" class="nav-link p-0 text-light myheight-2">Home</a></li>
+        <li class="nav-item mb-2"><a href="Wastedata.aspx" class="nav-link p-0 text-light myheight-2">Garbdate</a></li>
+        <li class="nav-item mb-2"><a href="TableDisplay.aspx" class="nav-link p-0 text-light myheight-2">History</a></li>
+        <li class="nav-item mb-2"><a href="Maps.aspx" class="nav-link p-0 text-light myheight-2">Maps</a></li>
+        <li class="nav-item mb-2"><a href="Teams.aspx" class="nav-link p-0 text-light myheight-2">Team</a></li>
       </ul>
     </div>
 

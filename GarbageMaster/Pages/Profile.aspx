@@ -73,7 +73,7 @@
         </div>
         <div class="col-md-4">
             <div class="p-3 py-5 d-flex">
-                <p>Last Updated: </p>&nbsp;<asp:Label ID="label7" runat="server">Yet to be reviewed</asp:Label>
+                <p>Last Garbdate: </p>&nbsp;<asp:Label ID="label7" runat="server">Yet to be reviewed</asp:Label>
             </div>
         </div>
     </div>

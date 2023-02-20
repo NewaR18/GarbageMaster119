@@ -31,7 +31,34 @@ namespace GarbageMaster.Pages
                 {
                     DoInPageLoad();
                 }
+                string uname = Session["UserName"].ToString();
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "Select DateReviewed from TblWasteDetails where UsernameW=@username";
+                    using(SqlConnection conn=new SqlConnection(conval))
+                    {
+                        cmd.Connection = conn;
+                        cmd.CommandTimeout = 30;
+                        conn.Open();
+                        cmd.Parameters.Add("@username",SqlDbType.VarChar).Value= uname;
+                        using(SqlDataReader rd = cmd.ExecuteReader())
+                        {
+                            if (rd.HasRows)
+                            {
+                                while (rd.Read())
+                                {
+                                    DateTime dt = new DateTime();
+                                    dt = Convert.ToDateTime(rd["DateReviewed"]);
+                                    String s2=dt.ToString("MMMM dd, yyyy");
+                                    label7.Text= s2;
+                                }
+                            }
+                        }
+                    }
+                }
             }
+            
         }
 
         protected void Update(object sender, EventArgs e)

@@ -50,6 +50,7 @@
     </asp:GridView>
         <div class="text-align-end">
             <asp:LinkButton CssClass="mytruck2 p-2" ID="sendtruck" runat="server" Text="Send Truck" OnClick="TruckSent"></asp:LinkButton>
+            <asp:LinkButton CssClass="mytruck2 p-2" style="background-color:#ff5a5a" ID="checkout" runat="server" Text="Checkout" OnClick="Checkedout"></asp:LinkButton>
         </div>
     </div>
         </div>
