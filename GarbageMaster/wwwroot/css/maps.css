@@ -5,3 +5,6 @@
     color:#012970;
     font-family:Serif;
 }
+.leaflet-control-attribution {
+    display: none;
+}

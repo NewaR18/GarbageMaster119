@@ -6,8 +6,7 @@
     <link href="../wwwroot/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="../wwwroot/bootstrap/bootstrap-icons.css" rel="stylesheet" />
     <link href="../wwwroot/css/teams.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-    <script src="https://ajax.aspnetcdn.com/ajax/knockout/knockout-3.1.0.js" type="text/javascript"></script>
+    <script src="../wwwroot/js/knockout-3.1.0.js" type="text/javascript"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <section id="hero">

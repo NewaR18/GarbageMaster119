@@ -521,6 +521,9 @@
     <Content Include="wwwroot\bootstrap\swiper-bundle.min.css" />
     <Content Include="wwwroot\bootstrap\swiper-bundle.min.js" />
     <Content Include="wwwroot\bootstrap\transformations.css" />
+    <Content Include="wwwroot\css\CDNS\dataTables.semanticui.min.css" />
+    <Content Include="wwwroot\css\CDNS\leaflet.css" />
+    <Content Include="wwwroot\css\CDNS\semantic.min.css" />
     <Content Include="wwwroot\css\home.css" />
     <Content Include="wwwroot\css\layout.css" />
     <Content Include="wwwroot\css\layout2.css" />
@@ -560,6 +563,13 @@
     <Content Include="wwwroot\images\speaker.png" />
     <Content Include="wwwroot\images\System.png" />
     <Content Include="wwwroot\images\xx.jpg" />
+    <Content Include="wwwroot\js\CDNs\bootstrap4.min.js" />
+    <Content Include="wwwroot\js\CDNs\dataTables.semanticui.min.js" />
+    <Content Include="wwwroot\js\CDNs\jquery.dataTables.min.js" />
+    <Content Include="wwwroot\js\CDNs\leaflet.js" />
+    <Content Include="wwwroot\js\CDNs\semantic.min.js" />
+    <Content Include="wwwroot\js\CDNs\sweetalert2.all.min.js" />
+    <Content Include="wwwroot\js\knockout-3.1.0.js" />
     <Content Include="wwwroot\js\NewPassword.js" />
     <Content Include="wwwroot\js\pinenter.js" />
     <Content Include="wwwroot\js\reset.js" />

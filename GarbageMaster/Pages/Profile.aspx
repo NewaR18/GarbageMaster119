@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="../wwwroot/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <script src="../wwwroot/js/jquery-3.6.3.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.all.min.js"></script>
+    <script src="../wwwroot/js/CDNs/sweetalert2.all.min.js"></script>
     <script type="text/javascript">
         /*$(function () {
             $("Image1").click(function () {

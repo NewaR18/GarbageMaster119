@@ -3,11 +3,11 @@
     <link rel="stylesheet" href="../wwwroot/css/home.css" />
     <link href="../wwwroot/bootstrap/animate.min.css" rel="stylesheet" />
     <script src="../wwwroot/js/jquery-3.6.3.js"></script>
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.8/semantic.min.css" rel="stylesheet" />
-    <link href="https://cdn.datatables.net/1.13.1/css/dataTables.semanticui.min.css" rel="stylesheet" />
-    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.13.1/js/dataTables.semanticui.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.8/semantic.min.js"></script>
+    <link href="../wwwroot/css/CDNS/semantic.min.css" rel="stylesheet" />
+    <link href="../wwwroot/css/CDNS/dataTables.semanticui.min.css" rel="stylesheet" />
+    <script src="../wwwroot/js/CDNs/jquery.dataTables.min.js"></script>
+    <script src="../wwwroot/js/CDNs/dataTables.semanticui.min.js"></script>
+    <script src="../wwwroot/js/CDNs/semantic.min.js"></script>
     <link href="../wwwroot/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="../wwwroot/bootstrap/bootstrap-icons.css" rel="stylesheet" />
     <link href="../wwwroot/css/TableDisplay.css" rel="stylesheet" />

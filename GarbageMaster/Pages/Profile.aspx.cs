@@ -49,9 +49,13 @@ namespace GarbageMaster.Pages
                                 while (rd.Read())
                                 {
                                     DateTime dt = new DateTime();
-                                    dt = Convert.ToDateTime(rd["DateReviewed"]);
-                                    String s2=dt.ToString("MMMM dd, yyyy");
-                                    label7.Text= s2;
+                                    string dates2 = rd["DateReviewed"].ToString();
+                                    if (rd["DateReviewed"].ToString() != "")
+                                    {
+                                        dt = Convert.ToDateTime(rd["DateReviewed"]);
+                                        String s2 = dt.ToString("MMMM dd, yyyy");
+                                        label7.Text = s2;
+                                    }
                                 }
                             }
                         }

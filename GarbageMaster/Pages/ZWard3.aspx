@@ -1,15 +1,15 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Layout.Master" AutoEventWireup="true" CodeBehind="ZWard3.aspx.cs" Inherits="GarbageMaster.Pages.ZWard3" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <link rel="stylesheet" href="../wwwroot/css/CDNS/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="../wwwroot/js/CDNs/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
     <link href="../wwwroot/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <script src="../wwwroot/js/GeoJsonByWards/ward3.js"></script>
     <script src="../wwwroot/js/jquery-3.6.3.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.8/semantic.min.css" rel="stylesheet" />
-    <link href="https://cdn.datatables.net/1.13.1/css/dataTables.semanticui.min.css" rel="stylesheet" />
-    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.13.1/js/dataTables.semanticui.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.8/semantic.min.js"></script>
+    <link href="../wwwroot/css/CDNS/semantic.min.css" rel="stylesheet" />
+    <link href="../wwwroot/css/CDNS/dataTables.semanticui.min.css" rel="stylesheet" />
+    <script src="../wwwroot/js/CDNs/jquery.dataTables.min.js"></script>
+    <script src="../wwwroot/js/CDNs/dataTables.semanticui.min.js"></script>
+    <script src="../wwwroot/js/CDNs/semantic.min.js"></script>
     <link href="../wwwroot/css/maps.css" rel="stylesheet" />
     <script type="text/javascript">
         $(document).ready(function () {

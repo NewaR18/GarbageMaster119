@@ -3,11 +3,10 @@
     <link href="../wwwroot/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="../wwwroot/css/LoginForm.css" rel="stylesheet" />
     <script src="../wwwroot/js/jquery-3.6.3.js"></script>
-    <script src="https://ajax.aspnetcdn.com/ajax/knockout/knockout-3.1.0.js" type="text/javascript"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.all.min.js"></script>
+    <script src="../wwwroot/js/knockout-3.1.0.js" type="text/javascript"></script>
+    <script src="../wwwroot/js/CDNs/sweetalert2.all.min.js"></script>
     <script src="../wwwroot/js/login.js"></script>
     
-
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <main>
