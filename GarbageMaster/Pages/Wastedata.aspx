@@ -29,7 +29,7 @@
                 <span>Number of filled Plastics</span>
                 <p>Small plastic refers to bags that contains very small amount of garbages. We advise you not to count without filling the entire bag. The filled bag allows us to measure the data more efficiently.</p>
                   <div class="col-6 mt-3">
-                <input data-bind="value:smallplastic" type="number" class="form-control" id="inputsmallplastic" placeholder="Quantity in Units">
+                <input data-bind="value:smallplastic" type="number" class="form-control" id="inputsmallplastic" min="0" placeholder="Quantity in Units">
                   </div>
              </div>
             </div>
@@ -43,7 +43,7 @@
                 <span>Number of filled big bags</span>
                 <p>Big bag refers to bags that contains large amount of garbages. We advise you not to count without filling the entire bag. The filled bag allows us to measure the data more efficiently.</p>
                   <div class="col-6 mt-3">
-                <input data-bind="value:bigplastic" type="number" class="form-control " id="inputbigplastic" placeholder="Quantity in Units">
+                <input data-bind="value:bigplastic" type="number" class="form-control " id="inputbigplastic" min="0" placeholder="Quantity in Units">
                   </div>
               </div>
             </div>
@@ -57,7 +57,7 @@
                 <span>Number of filled Dustbin</span>
                 <p>Dust bin refers to storage that contains large amount of garbages. If the dustbin is very small, please count it in plastic zone. We advise you not to count without filling the entire bin to make it more efficient</p>
                   <div class="col-6 mt-3">
-                <input data-bind="value:dustbin" type="number" class="form-control" id="inputdustbin" placeholder="Quantity in Units">
+                <input data-bind="value:dustbin" type="number" class="form-control" id="inputdustbin" min="0" placeholder="Quantity in Units">
                   </div>
               </div>
             </div>
@@ -71,7 +71,7 @@
                 <span>Number of filled sack bags</span>
                 <p>Sack bag refers to bags that contains very large amount of garbages. We advise you not to count without filling the entire bag. The filled bag allows us to measure the data more efficiently.</p>
                   <div class="col-6 mt-3">
-                <input data-bind="value:sack" type="number" class="form-control" id="inputsack" placeholder="Quantity in Units">
+                <input data-bind="value:sack" type="number" class="form-control" id="inputsack" min="0" placeholder="Quantity in Units">
                   </div>
               </div>
             </div>

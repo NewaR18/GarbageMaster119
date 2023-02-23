@@ -27,6 +27,23 @@
                 icon: 'error',
                 title: 'All fields cannot be empty'
             })
+        } else if (self.Master().smallplastic() < 0 || self.Master().bigplastic() < 0 || self.Master().dustbin() < 0 || self.Master().sack()< 0) {
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 5000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+            })
+
+            Toast.fire({
+                icon: 'error',
+                title: 'Fields cannot be negative'
+            })
         } else {
             $.ajax({
                 type: "POST",

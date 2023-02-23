@@ -177,6 +177,15 @@ namespace GarbageMaster.Pages
         protected global::System.Web.UI.WebControls.TextBox PhoneNo;
 
         /// <summary>
+        /// rPhoneNo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator rPhoneNo;
+
+        /// <summary>
         /// label5 control.
         /// </summary>
         /// <remarks>
@@ -193,6 +202,24 @@ namespace GarbageMaster.Pages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Ward;
+
+        /// <summary>
+        /// rvward control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator rvward;
+
+        /// <summary>
+        /// rfvward control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvward;
 
         /// <summary>
         /// update control.

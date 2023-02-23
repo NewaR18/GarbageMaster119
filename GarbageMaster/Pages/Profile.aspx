@@ -32,6 +32,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container rounded bg-white mt-5 mb-5">
+        
     <div class="row">
         <div class="col-md-3 border-right">
             <div class="d-flex flex-column align-items-center text-center makeitcirclelike p-3 py-5">
@@ -60,13 +61,22 @@
                     <div class="col-md-4"><asp:Label ID="label2" class="labels" runat="server">Last Name</asp:Label><asp:TextBox ID="LastName" runat="server" class="form-control" readonly=true></asp:TextBox></div>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-md-12"><asp:Label ID="label3" class="labels" runat="server">Email</asp:Label><asp:TextBox ID="Email" runat="server" class="form-control" readonly=true></asp:TextBox></div>
+                    <div class="col-md-12">
+                        <asp:Label ID="label3" class="labels" runat="server">Email</asp:Label>
+                        <asp:TextBox ID="Email" runat="server" class="form-control" readonly=true></asp:TextBox>
+                    </div>
                     <div class="col-md-12"><asp:Label ID="label4" class="labels" runat="server">Username</asp:Label><asp:TextBox ID="Username" runat="server" class="form-control" readonly=true></asp:TextBox></div>
                     <div class="col-md-12"><asp:Label ID="label6" class="labels" runat="server">Phone Number</asp:Label><asp:TextBox ID="PhoneNo" runat="server" class="form-control" readonly=true></asp:TextBox></div>
+                    <asp:RegularExpressionValidator ID="rPhoneNo" runat="server" ControlToValidate="PhoneNo" ErrorMessage="Enter your Phone Number" ValidationExpression="^(98|97)\d{8}$"></asp:RegularExpressionValidator>
                     <div class="col-md-12"><label class="labels">Country</label><input type="text" class="form-control" value="Nepal" readonly></div>
                     <div class="col-md-12"><label class="labels">State</label><input type="text" class="form-control" value="Bagmati" readonly></div>
                     <div class="col-md-12"><label class="labels">District</label><input type="text" class="form-control" value="Kathmandu" readonly></div>
-                    <div class="col-md-12"><asp:Label ID="label5" class="labels" runat="server">Ward</asp:Label><asp:TextBox ID="Ward" runat="server" class="form-control" readonly=true></asp:TextBox></div>
+                    <div class="col-md-12">
+                        <asp:Label ID="label5" class="labels" runat="server">Ward</asp:Label>
+                        <asp:TextBox ID="Ward" runat="server" class="form-control" readonly=true></asp:TextBox>
+                        <asp:RangeValidator ID="rvward" runat="server" ControlToValidate="Ward"  ErrorMessage="Enter the Ward number(1-32)" MaximumValue="32"  MinimumValue="1" Type="Integer"></asp:RangeValidator>
+                        <asp:RequiredFieldValidator ID="rfvward" runat="server" ControlToValidate ="Ward" ErrorMessage="Please enter the ward number" InitialValue=""></asp:RequiredFieldValidator>
+                    </div>
                 </div>
                 <div class="mt-5 text-center"><asp:Button ID="update" class="myownbutton profile-button" runat="server" Text="Update" OnClick="Update"  Visible=false/></div>
             </div>
@@ -77,6 +87,6 @@
             </div>
         </div>
     </div>
-</div>
+        </div>
     <div id="dialog" style="display: none"></div>
 </asp:Content>
