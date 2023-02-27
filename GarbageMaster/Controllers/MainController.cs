@@ -56,5 +56,15 @@ namespace GarbageMaster.Controllers
         {
             return Json(new { Name = _repo.resetpassword(Password) }, JsonRequestBehavior.AllowGet);
         }
+        [HttpGet]
+        public JsonResult getwastedetails()
+        {
+            return Json(_repo.Getwastedetailswithward(), JsonRequestBehavior.AllowGet);
+        }
+        [HttpGet]
+        public JsonResult getuserdetails()
+        {
+            return Json(_repo.GetUserDetails(), JsonRequestBehavior.AllowGet);
+        }
     }
 }

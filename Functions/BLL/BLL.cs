@@ -1,5 +1,7 @@
 ﻿using Functions.Data_Link_Layer;
+using Functions.Models;
 using System;
+using System.Collections.Generic;
 using System.Net.Mail;
 using System.Web;
 using System.Xml.Linq;
@@ -100,7 +102,7 @@ namespace Functions.Business_Logic_Layer
             try
             {
                 MailMessage mail = new MailMessage();
-                mail.To.Add("shirashshrestha10@gmail.com");
+                mail.To.Add("sudipshrestha960@gmail.com");
                 mail.From = new MailAddress("chessmastersudip2015@gmail.com");
                 int data = Convert.ToInt32(n);
                 mail.Subject = "Waste Warning || Garbage Truck Required";
@@ -175,6 +177,14 @@ namespace Functions.Business_Logic_Layer
         {
             string email = HttpContext.Current.Session["Email"].ToString();
             return _dll.ResetPassword(Password,email);
+        }
+        public List<WasteWithWard> Getwastedetailswithward()
+        {
+            return _dll.Getwastedetailswithward();
+        }
+        public List<Users> GetUserDetails()
+        {
+            return _dll.GetUserData();
         }
     }
 }

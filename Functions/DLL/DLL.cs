@@ -1,11 +1,12 @@
-﻿using System;
+﻿using Functions.Models;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Web;
+using System.Web.UI.WebControls;
 using System.Xml.Linq;
-
 namespace Functions.Data_Link_Layer
 {
     public class DLL
@@ -469,6 +470,101 @@ namespace Functions.Data_Link_Layer
             HttpContext.Current.Session["Code"] = null;
             HttpContext.Current.Session["Email"] = null;
             return response;
+        }
+        public List<string> CountUser()
+        {
+            List<string> counts1 = new List<string>();
+            using (SqlCommand cmd = new SqlCommand())
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "CountUserAndColors";
+                using (SqlConnection conn = new SqlConnection(conval))
+                {
+                    cmd.Connection = conn;
+                    conn.Open();
+                    cmd.CommandTimeout = 30;
+                    using (SqlDataReader rd = cmd.ExecuteReader())
+                    {
+                        if (rd.HasRows)
+                        {
+                            while (rd.Read())
+                            {
+                                counts1.Add(Convert.ToString(rd["Users"]));
+                                counts1.Add(Convert.ToString(rd["green"]));
+                                counts1.Add(Convert.ToString(rd["yellow"]));
+                                counts1.Add(Convert.ToString(rd["red"]));
+                            }
+                        }
+                    }
+                }
+            }
+            return counts1;
+        }
+        public List<WasteWithWard> Getwastedetailswithward()
+        {
+            List<WasteWithWard> list1=new List<WasteWithWard> ();
+            
+            using (SqlCommand cmd = new SqlCommand())
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "wardsandwaste";
+                using (SqlConnection conn = new SqlConnection(conval))
+                {
+                    cmd.Connection = conn;
+                    conn.Open();
+                    cmd.CommandTimeout = 30;
+                    using (SqlDataReader rd = cmd.ExecuteReader())
+                    {
+                        if (rd.HasRows)
+                        {
+                            while (rd.Read())
+                            {
+                                WasteWithWard w1 = new WasteWithWard();
+                                w1.Ward_No = Convert.ToInt32(rd["Ward_No"]);
+                                w1.Waste = Convert.ToInt32(rd["Waste"]);
+                                list1.Add(w1);
+                            }
+                        }
+                    }
+                }
+            }
+            return list1;
+        }
+        public List<Users> GetUserData()
+        {
+            List<Users> list1=new List<Users> ();
+            
+            using (SqlCommand cmd = new SqlCommand())
+            {
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "SELECT u.FNAme,u.MName,u.LName,u.Email,u.Username,e.PhoneNo,u.[Password],u.Ward FROM Users u INNER JOIN dbo.ExtraUserData e ON e.Username = u.Username ORDER BY u.Id";
+                using (SqlConnection conn = new SqlConnection(conval))
+                {
+                    cmd.Connection = conn;
+                    conn.Open();
+                    cmd.CommandTimeout = 30;
+                    using (SqlDataReader rd = cmd.ExecuteReader())
+                    {
+                        if (rd.HasRows)
+                        {
+                            while (rd.Read())
+                            {
+                                Users u1 = new Users();
+                                u1.FName = Convert.ToString(rd["FNAme"]);
+                                u1.MName = Convert.ToString(rd["MNAme"]);
+                                u1.LName = Convert.ToString(rd["LNAme"]);
+                                u1.Email = Convert.ToString(rd["Email"]);
+                                u1.Username = Convert.ToString(rd["Username"]);
+                                u1.PhoneNo = Convert.ToString(rd["PhoneNo"]);
+                                u1.Password = Convert.ToString(rd["Password"]);
+                                u1.Ward = Convert.ToInt32(rd["Ward"]);
+                                list1.Add(u1);
+                            }
+                        }
+                    }
+                }
+            }
+            return list1;
         }
     }
 }

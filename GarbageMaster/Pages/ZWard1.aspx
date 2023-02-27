@@ -1,8 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Layout.Master" AutoEventWireup="true" CodeBehind="ZWard1.aspx.cs" Inherits="GarbageMaster.Pages.ZWard1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="../wwwroot/css/CDNS/leaflet.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../wwwroot/css/CDNS/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
-    <script src="../wwwroot/js/CDNs/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <link rel="stylesheet" href="../wwwroot/css/CDNS/leaflet.css" />
+    <script src="../wwwroot/js/CDNs/leaflet.js"></script>
     <link href="../wwwroot/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <script src="../wwwroot/js/GeoJsonByWards/ward1.js"></script>
     <script src="../wwwroot/js/jquery-3.6.3.js"></script>

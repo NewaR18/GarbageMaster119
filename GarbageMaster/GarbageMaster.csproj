@@ -117,6 +117,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -139,6 +146,13 @@
     </Compile>
     <Compile Include="Pages\Admin.aspx.designer.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin2.aspx.cs">
+      <DependentUpon>Admin2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin2.aspx.designer.cs">
+      <DependentUpon>Admin2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -202,6 +216,13 @@
     </Compile>
     <Compile Include="Pages\Teams.aspx.designer.cs">
       <DependentUpon>Teams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Wastedata.aspx.cs">
       <DependentUpon>Wastedata.aspx</DependentUpon>
@@ -460,6 +481,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Pages\Admin.aspx" />
+    <Content Include="Pages\Admin2.aspx" />
     <Content Include="Pages\Login.aspx" />
     <Content Include="Pages\Maps.aspx" />
     <Content Include="Pages\NewPassword.aspx" />
@@ -469,6 +491,7 @@
     <Content Include="Pages\ResetPassword.aspx" />
     <Content Include="Pages\TableDisplay.aspx" />
     <Content Include="Pages\Teams.aspx" />
+    <Content Include="Pages\Users.aspx" />
     <Content Include="Pages\Wastedata.aspx" />
     <Content Include="Pages\ZWard1.aspx" />
     <Content Include="Pages\ZWard10.aspx" />
@@ -514,6 +537,7 @@
     <Content Include="wwwroot\bootstrap\bootstrap.min.js" />
     <Content Include="wwwroot\bootstrap\boxicons.css" />
     <Content Include="wwwroot\bootstrap\boxicons.min.css" />
+    <Content Include="wwwroot\bootstrap\fonts\fontawesome-webfont.svg" />
     <Content Include="wwwroot\bootstrap\glightbox.min.css" />
     <Content Include="wwwroot\bootstrap\jquery.dataTables.css" />
     <Content Include="wwwroot\bootstrap\jquery.dataTables.js" />
@@ -521,9 +545,31 @@
     <Content Include="wwwroot\bootstrap\swiper-bundle.min.css" />
     <Content Include="wwwroot\bootstrap\swiper-bundle.min.js" />
     <Content Include="wwwroot\bootstrap\transformations.css" />
+    <Content Include="wwwroot\css\CDNS\animate.css" />
+    <Content Include="wwwroot\css\CDNS\baguetteBox.min.css" />
+    <Content Include="wwwroot\css\CDNS\bootstrap-grid.css" />
+    <Content Include="wwwroot\css\CDNS\bootstrap-grid.min.css" />
+    <Content Include="wwwroot\css\CDNS\bootstrap-reboot.css" />
+    <Content Include="wwwroot\css\CDNS\bootstrap-reboot.min.css" />
+    <Content Include="wwwroot\css\CDNS\bootstrap-select.css" />
+    <Content Include="wwwroot\css\CDNS\bootstrap.css" />
+    <Content Include="wwwroot\css\CDNS\bootstrap.min.css" />
+    <Content Include="wwwroot\css\CDNS\calendar.css" />
+    <Content Include="wwwroot\css\CDNS\calendar.min.css" />
+    <Content Include="wwwroot\css\CDNS\color_2.css" />
+    <Content Include="wwwroot\css\CDNS\custom.css" />
     <Content Include="wwwroot\css\CDNS\dataTables.semanticui.min.css" />
+    <Content Include="wwwroot\css\CDNS\flaticon.css" />
+    <Content Include="wwwroot\css\CDNS\font-awesome.css" />
+    <Content Include="wwwroot\css\CDNS\font-awesome.min.css" />
+    <Content Include="wwwroot\css\CDNS\jquery.fancybox.css" />
+    <Content Include="wwwroot\css\CDNS\jquery.fancybox.min.css" />
     <Content Include="wwwroot\css\CDNS\leaflet.css" />
+    <Content Include="wwwroot\css\CDNS\owl.carousel.css" />
+    <Content Include="wwwroot\css\CDNS\perfect-scrollbar.css" />
+    <Content Include="wwwroot\css\CDNS\responsive.css" />
     <Content Include="wwwroot\css\CDNS\semantic.min.css" />
+    <Content Include="wwwroot\css\CDNS\style.css" />
     <Content Include="wwwroot\css\home.css" />
     <Content Include="wwwroot\css\layout.css" />
     <Content Include="wwwroot\css\layout2.css" />
@@ -545,6 +591,9 @@
     <Content Include="wwwroot\images\Dustbin.png" />
     <Content Include="wwwroot\images\garbage.png" />
     <Content Include="wwwroot\images\Health.png" />
+    <Content Include="wwwroot\images\icons8-autumn-96.png" />
+    <Content Include="wwwroot\images\icons8-money-bag-franc-96.png" />
+    <Content Include="wwwroot\images\icons8-spinach-96.png" />
     <Content Include="wwwroot\images\kumal.png" />
     <Content Include="wwwroot\images\location.png" />
     <Content Include="wwwroot\images\logo1.png" />
@@ -552,6 +601,7 @@
     <Content Include="wwwroot\images\map.png" />
     <Content Include="wwwroot\images\network.png" />
     <Content Include="wwwroot\images\new1.png" />
+    <Content Include="wwwroot\images\pattern_h.png" />
     <Content Include="wwwroot\images\pic1.png" />
     <Content Include="wwwroot\images\plastic.png" />
     <Content Include="wwwroot\images\pra.png" />
@@ -563,12 +613,39 @@
     <Content Include="wwwroot\images\speaker.png" />
     <Content Include="wwwroot\images\System.png" />
     <Content Include="wwwroot\images\xx.jpg" />
+    <Content Include="wwwroot\js\CDNs\analyser.js" />
+    <Content Include="wwwroot\js\CDNs\animate.js" />
+    <Content Include="wwwroot\js\CDNs\bootstrap-select.js" />
+    <Content Include="wwwroot\js\CDNs\bootstrap.bundle.js" />
+    <Content Include="wwwroot\js\CDNs\bootstrap.bundle.min.js" />
+    <Content Include="wwwroot\js\CDNs\bootstrap.js" />
+    <Content Include="wwwroot\js\CDNs\bootstrap.min.js" />
     <Content Include="wwwroot\js\CDNs\bootstrap4.min.js" />
+    <Content Include="wwwroot\js\CDNs\calendar.js" />
+    <Content Include="wwwroot\js\CDNs\calendar.min.js" />
+    <Content Include="wwwroot\js\CDNs\Chart.bundle.js" />
+    <Content Include="wwwroot\js\CDNs\Chart.bundle.min.js" />
+    <Content Include="wwwroot\js\CDNs\Chart.js" />
+    <Content Include="wwwroot\js\CDNs\Chart.min.js" />
+    <Content Include="wwwroot\js\CDNs\chart_custom_style1.js" />
+    <Content Include="wwwroot\js\CDNs\chart_custom_style2.js" />
+    <Content Include="wwwroot\js\CDNs\custom.js" />
+    <Content Include="wwwroot\js\CDNs\custom_chart.js" />
     <Content Include="wwwroot\js\CDNs\dataTables.semanticui.min.js" />
+    <Content Include="wwwroot\js\CDNs\jquery-3.3.1.min.js" />
     <Content Include="wwwroot\js\CDNs\jquery.dataTables.min.js" />
+    <Content Include="wwwroot\js\CDNs\jquery.fancybox.js" />
+    <Content Include="wwwroot\js\CDNs\jquery.fancybox.min.js" />
+    <Content Include="wwwroot\js\CDNs\jquery.min.js" />
     <Content Include="wwwroot\js\CDNs\leaflet.js" />
+    <Content Include="wwwroot\js\CDNs\owl.carousel.js" />
+    <Content Include="wwwroot\js\CDNs\perfect-scrollbar.min.js" />
+    <Content Include="wwwroot\js\CDNs\popper.min.js" />
     <Content Include="wwwroot\js\CDNs\semantic.min.js" />
+    <Content Include="wwwroot\js\CDNs\settings.html" />
     <Content Include="wwwroot\js\CDNs\sweetalert2.all.min.js" />
+    <Content Include="wwwroot\js\CDNs\utils.js" />
+    <Content Include="wwwroot\js\DispayUsers.js" />
     <Content Include="wwwroot\js\knockout-3.1.0.js" />
     <Content Include="wwwroot\js\NewPassword.js" />
     <Content Include="wwwroot\js\pinenter.js" />
@@ -613,6 +690,7 @@
     <Content Include="Layout.Master" />
     <Content Include="wwwroot\js\Wardmap.js" />
     <Content Include="wwwroot\js\wastedata.js" />
+    <Content Include="Admin.Master" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -636,6 +714,19 @@
     <Content Include="wwwroot\bootstrap\swiper-bundle.min.js.map" />
     <Content Include="wwwroot\bootstrap\bootstrap.min.css.map" />
     <Content Include="Site1.Master" />
+    <Content Include="wwwroot\js\CDNs\bootstrap.bundle.js.map" />
+    <Content Include="wwwroot\js\CDNs\bootstrap.bundle.min.js.map" />
+    <Content Include="wwwroot\js\CDNs\bootstrap.js.map" />
+    <Content Include="wwwroot\js\CDNs\bootstrap.min.js.map" />
+    <Content Include="wwwroot\css\CDNS\bootstrap-grid.css.map" />
+    <Content Include="wwwroot\css\CDNS\bootstrap-grid.min.css.map" />
+    <Content Include="wwwroot\css\CDNS\bootstrap-reboot.css.map" />
+    <Content Include="wwwroot\css\CDNS\bootstrap-reboot.min.css.map" />
+    <Content Include="wwwroot\css\CDNS\bootstrap.css.map" />
+    <Content Include="wwwroot\css\CDNS\bootstrap.min.css.map" />
+    <Content Include="wwwroot\bootstrap\fonts\fontawesome-webfont.woff" />
+    <Content Include="wwwroot\bootstrap\fonts\fontawesome-webfont.ttf" />
+    <Content Include="wwwroot\bootstrap\fonts\fontawesome-webfont.eot" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
